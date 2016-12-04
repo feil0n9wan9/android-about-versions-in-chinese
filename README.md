@@ -1,6 +1,6 @@
 # Android官方版本更新说明中文版
 
-[Android](https://www.android.com)每个版都会加入很多新功能和特性，作为[Android](https://www.android.com)开发人员，应及时了解这些新功能和特性。我们正通过Github发起开源协作翻译项目，希望能为国内广大[Android](https://www.android.com)开发人员提供更多更及时的[Android](https://www.android.com)中文资料。由于水平有限，难免有翻译不对或不恰当的地方，欢迎大家加入此协作项目，共同完善中文版本的输出。
+[Android](https://www.android.com)每个版都会加入很多新功能和特性，作为[Android](https://www.android.com)开发人员，应及时了解这些新功能和特性。我们正通过Github发起开源协作翻译项目，希望能为国内广大[Android](https://www.android.com)开发人员提供更多及时的[Android](https://www.android.com)中文资料。文章难免有翻译不对或不恰当的地方，欢迎大家加入此协作项目，共同完善中文版本的输出。
 
 原文文档：<https://developer.android.com/about/versions/nougat/index.html>
 
@@ -11,17 +11,17 @@
 
 ## 在线阅读
 
-**<http://feilongwang.org/android-about-versions-in-chinese/index.html>**
+**<https://feil0n9wan9.gitbooks.io/android-about-versions-in-chinese/content/index.html>**
 
 
 ## 参与方式
 
 如果您想参与此项目，协助翻译或校对，可以通过如下步骤：
 * Fork主仓库（<https://github.com/feil0n9wan9/android-about-versions-in-chinese>）。
-* 认领翻译。在下面的`README.md`里找到还没有被人认领的页面，写上（@你的github账号），然后给主仓库的`master`分支提交pull request。
+* 认领翻译。在项目的README.md里找到还没有被人认领的页面，写上“@你的github账号”，然后给主仓库的`master`分支提交pull request。
 * 开始翻译。提交的pull request被确认、合并到主仓库后，代表你申请的页面占位完成，您就可以开始翻译。
 * 提交翻译。翻译完成后请提交pull request给主仓库的`master`分支。
-* 核校并合并。我们将会对翻译的文档进行核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
+* 核校翻译。我们将会对翻译的文档进行核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
 * 发布文档。全部翻译完成后将生成PDF文档或以网页形式发布。
 
 
