@@ -1,0 +1,29 @@
+sudo: false
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install gitbook-cli -g
+before_script:
+  - git config --global user.name "Feilong Wang"
+  - git config --global user.email "i@feilongwang.org"
+script:
+  - gitbook init
+  - gitbook build
+after_script:
+  - cd _book
+  - rm .travis.yml
+  - git init
+  - git add -A
+  - updated=`date +"%F %T"`
+  - git commit -m "Site updated ${updated}"
+  - git push --force --quiet "https://${GH_Token}@${GH_Ref}" master:gh-pages
+os:
+  - linux
+env:
+  global:
+    - GH_Ref: github.com/feil0n9wan9/android-about-versions-in-chinese.git
+    - secure: "SZWfclVJ21eHy5D1bEm3im/Anoe4OWZNuTfxkLVhMiq845Q6/qwCIuoHabbCoUE//eNwjtyIHz9mAbE4w6LKOhZUezZzh42bE1t34GOwGjFH0yts64AIPsIuGTE4weEcVqeKrGr+jY/LVXKzZvfH5ZxYjeF8sw25WrefmcFTBLyuEuFL9EYbwxGfBfoJaQGUG1nMGJueWd8QFYq7HmQNX4mVSb8DvWAfM2vIoYNhhiEqmG5iFiMpjO7vyGDILbSK+zWNzCnVsPgFuxfgBdCVnyMRnfPtQX2Gz0rul1oW15JhJX3qanROMdoWBMe9EF4qgwkNzOeWKmOvJRT2JL2RqjDdeWTsjxqlfHU3IIt15bRloL9DjXGMQFDgT9I4VC06WZ57O01S7IXR/btG8NeH4qQpGtLGD+XxFCfzsSZy3HnYtMKXnthrj+PzSvG8mlCgUD87P4nfOq6HREgKJLbKSYIt3J3vcJqC55KIdaGdqb3zxCHrZXSfNwVf0QeKBlfwWlqRrnph+fxVTMjQo2iVmMWnSXaHKMzuGRS2I6OOWg5SQClKtdU12d6sgZe2Z/ePfzC7/J6Ixo/TUle6kPX0uqYuiAARg+F9ITroUmYbgvYzXFSwpHYIgxp8HoPRViQpwt457WuzZKErlCrlENPSAr8M/AmpfVziQkIrXR1vlAo="
