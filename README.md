@@ -1,5 +1,7 @@
 # Android官方版本更新说明中文版
 
+[![Join the chat at https://gitter.im/android-about-versions-in-chinese/Lobby](https://badges.gitter.im/android-about-versions-in-chinese/Lobby.svg)](https://gitter.im/android-about-versions-in-chinese/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese.svg?branch=gh-pages)](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese)
 
 [Android](https://www.android.com)每个版都会加入很多新功能和特性，作为[Android](https://www.android.com)开发人员，应及时了解这些新功能和特性。我们正通过Github发起开源协作翻译项目，希望能为国内广大[Android](https://www.android.com)开发人员提供更多及时的[Android](https://www.android.com)中文资料。文章难免有翻译不对或不恰当的地方，欢迎大家加入此协作项目，共同完善中文版本的输出。
