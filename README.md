@@ -1,10 +1,14 @@
 # Android官方版本更新说明中文版
 
-[![Build Status](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese.svg?branch=gh-pages)](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese)
+[![Build Status](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese.svg?branch=master)](https://travis-ci.org/feil0n9wan9/android-about-versions-in-chinese)
 
-[Android](https://www.android.com)每个版都会加入很多新功能和特性，作为[Android](https://www.android.com)开发人员，应及时了解这些新功能和特性。我们正通过Github发起开源协作翻译项目，希望能为国内广大[Android](https://www.android.com)开发人员提供更多及时的[Android](https://www.android.com)中文资料。文章难免有翻译不对或不恰当的地方，欢迎大家加入此协作项目，共同完善中文版本的输出。
+[Android](https://www.android.com)每个版都会加入很多新功能和特性，作为[Android](https://www.android.com)开发人员，应及时了解这些新功能和特性。我们正通过Github发起开源协作翻译项目，希望能为国内广大[Android](https://www.android.com)开发人员提供更多及时的[Android](https://www.android.com)中文资料。
+
+此中文版难免有翻译不对或不恰当的地方，欢迎大家加入此协作项目，共同努力，完善中文版的输出。
 
 原文文档：<https://developer.android.com/about/versions/nougat/index.html>
+
+虽然Google官方刚刚宣布，发布[Google Developers中国网站](https://developer.android.google.cn)，但目前还未完全中文化，所以此项目还会继续进行以补充[Google Developers中国网站](https://developer.android.google.cn)。
 
 
 ## GitHub
@@ -19,13 +23,13 @@
 
 ## 参与方式
 
-如果您想参与此项目，协助翻译或校对，可以通过如下步骤：
-* Fork主仓库（<https://github.com/feil0n9wan9/android-about-versions-in-chinese>）。
-* 认领翻译。在项目的README.md里找到还没有被人认领的页面，写上“@你的github账号”，然后给主仓库的`master`分支提交pull request。
+如果您想加入此协作项目，参与翻译和校对，可以通过如下步骤：
+* fork主仓库（<https://github.com/feil0n9wan9/android-about-versions-in-chinese>）。
+* 申领翻译。在项目的README.md文件里找到还没有被人申领的页面，写上“@你的github账号”，然后给主仓库的`master`分支提交pull request。
 * 开始翻译。提交的pull request被确认、合并到主仓库后，代表你申请的页面占位完成，您就可以开始翻译。
 * 提交翻译。翻译完成后请提交pull request给主仓库的`master`分支。
-* 核校翻译。我们将会对翻译的文档进行核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
-* 发布文档。全部翻译完成后将生成PDF文档或以网页形式发布。
+* 核校翻译。翻译好的文档会进一步核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
+* 发布文档。全部翻译完成后将生成PDF文档并以网页形式发布。
 
 
 ## 目录结构
@@ -56,4 +60,4 @@
 
 ## 许可协议
 
-本作品隶属于<https://github.com/feil0n9wan9/android-about-versions-in-chinese>项目，采用[知识共享 署名-非商业性使用-相同方式共享 4.0 国际](http://creativecommons.org/licenses/by-nc-sa/4.0/)许可协议进行发布。
+本作品隶属于<https://github.com/feil0n9wan9/android-about-versions-in-chinese>项目，采用[知识共享 署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行发布。
