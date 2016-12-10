@@ -14,13 +14,14 @@ script:
   - gitbook init
   - gitbook build
 after_script:
-  - cd _book
-  - rm .travis.yml
-  - git init
+  - git fetch --depth=50 origin gh-pages
+  - git checkout -b gh-pages FETCH_HEAD
+  - rm -rf !(_book)
+  - cp -rf _book/* .
   - git add -A
   - updated=`date +"%F %T"`
   - git commit -m "Site updated ${updated}"
-  - git push --force --quiet "https://${GH_Token}@${GH_Ref}" master:gh-pages
+  - git push --quiet "https://${GH_Token}@${GH_Ref}" HEAD:gh-pages
 os:
   - linux
 env:
