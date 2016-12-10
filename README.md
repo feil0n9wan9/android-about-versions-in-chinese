@@ -8,7 +8,7 @@
 
 原文文档：<https://developer.android.com/about/versions/nougat/index.html>
 
-虽然Google官方刚刚宣布，发布[Google Developers中国网站](https://developer.android.google.cn)，但目前还未完全中文化，所以此项目还会继续进行以补充[Google Developers中国网站](https://developer.android.google.cn)。
+> 虽然Google官方刚刚宣布，发布[Google Developers中国网站](https://developer.android.google.cn)，但目前还有诸多页面不支持中文，即使已支持中文的页面，也还有诸多语句不通之处。所以此项目还会继续进行以提供更加友好的中文文档。
 
 
 ## GitHub
@@ -55,7 +55,7 @@
     - [Android 4.2 APIs](android-4.2.md)
     - [Android 4.1 APIs](android-4.1.md)
 - [关于Android](android.md)
-- [数据仪表盘](dashboards.md)
+- [数据表](dashboards.md)
 
 
 ## 许可协议
