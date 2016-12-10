@@ -32,6 +32,11 @@
 * 发布文档。全部翻译完成后将生成PDF文档并以网页形式发布。
 
 
+## 项目规范
+
+参考[issues#5](https://github.com/feil0n9wan9/android-about-versions-in-chinese/issues/5)。
+
+
 ## 目录结构
 
 - [序言](README.md)
@@ -55,7 +60,7 @@
     - [Android 4.2 APIs](android-4.2.md)
     - [Android 4.1 APIs](android-4.1.md)
 - [关于Android](android.md)
-- [数据表](dashboards.md)
+- [数据表](dashboards.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
 
 
 ## 许可协议
