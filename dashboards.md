@@ -10,7 +10,7 @@
 
 有关如何根据平台版本设定应用程序目标设备的信息，请阅读[支持不同平台版本](https://developer.android.com/training/basics/supporting-devices/platforms.html)。
 
-![](http://oartlnou9.bkt.clouddn.com/android-about-versions/images/dashboards-platform-versions.png)
+![](images/dashboards/platform-versions.png)
 
 
 ### 屏幕尺寸和密度
@@ -18,7 +18,7 @@
 
 有关如何在应用程序中支持多种屏幕配置的信息，请阅读[支持多种屏幕](https://developer.android.com/guide/practices/screens_support.html)。
 
-![](http://oartlnou9.bkt.clouddn.com/android-about-versions/images/dashboards-screen-sizes-and-densities.png)
+![](images/dashboards/screen-sizes-and-densities.png)
 
 
 ### Open GL版本
@@ -26,4 +26,5 @@
 
 要声明应用程序需要哪个版本的OpenGL ES，您应该使用[&lt;uses-feature&gt;](https://developer.android.com/guide/topics/manifest/uses-feature-element.html)元素的`android：glEsVersion`属性。您还可以使用[&lt;supports-gl-texture&gt;](https://developer.android.com/guide/topics/manifest/supports-gl-texture-element.html)元素声明应用程序使用的GL压缩格式。
 
-![](http://oartlnou9.bkt.clouddn.com/android-about-versions/images/dashboards-opengl-version-table.png)![](http://oartlnou9.bkt.clouddn.com/android-about-versions/images/dashboards-opengl-version-chart.png)
+![](images/dashboards/opengl-version-table.png)
+![](images/dashboards/opengl-version-chart.png)
