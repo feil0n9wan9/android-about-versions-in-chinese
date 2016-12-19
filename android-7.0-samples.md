@@ -1,5 +1,5 @@
 # Android 7.0示例
-使用下面的代码示例了解Android 7.0的功能和API。 要在Android Studio中下载示例，请选择**File > New > Import Samples**菜单选项。
+使用下面的代码示例了解Android 7.0的功能和API。要在Android Studio中下载示例，请选择**File > New > Import Samples**菜单选项。
 
 > **注意**：这些可下载的项目被设计与Gradle和Android Studio结合使用。
 
