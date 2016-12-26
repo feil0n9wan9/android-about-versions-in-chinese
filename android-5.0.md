@@ -1,7 +1,5 @@
 # Android 5.0 APIs
 
-####API 级别：21   
-
 Android 5.0 [LOLLIPOP][180] 为用户和应用开发者提供了新功能。本文旨在介绍其中最值得关注的新 API。  
 
 如果您有已发布的应用，请务必看一看 [Android 5.0][181] 行为变更，了解您的应用应该考虑的变化。即使您不使用新的 API 或者不围绕着新功能做开发，这些行为变更仍可能会影响您的应用在 Android 5.0 设备上的表现。  
@@ -393,7 +391,6 @@ jobScheduler.schedule(uploadTask);
 [124]: https://github.com/google/battery-historian
 
 ###工作场所和教育领域中的 Android
------------------------------------------------------------
 ####托管配置
 Android 5.0 提供了用于在企业环境内运行应用的新功能。如果用户已有个人帐户，则[设备管理员][125]可启动托管配置进程，向设备添加共存但独立的托管配置文件。与托管配置文件关联的应用与非托管应用一并出现在用户的启动器、最近使用的应用屏幕和通知中。
 
@@ -444,7 +441,6 @@ Android 5.0 引入了一个全新的固定屏幕 API，可让您暂时限制用�
 [138]: https://developer.android.google.cn/reference/android/app/Activity.html#stopLockTask()
 
 ###打印框架
---------------------------------------------------------
 ####将 PDF 渲染成位图
 您现在可以利用新增的 [PdfRenderer][139] 类，将 PDF 文档页面渲染成位图图像后进行打印。您必须指定一个可查找（即内容可随机访问的） [ParcelFileDescriptor][140]，系统会在其上写入可打印内容。您的应用可通过 [openPage()][141] 获得要渲染的页面，然后调用 [render()][142] 将打开的 [PdfRenderer.Page][143] 转换成位图。如果您只想将文档的一部分转换成位图图像（例如，为了实现[平铺渲染][144]以便放大文档），还可以设置其他参数。
 
@@ -458,7 +454,6 @@ Android 5.0 引入了一个全新的固定屏幕 API，可让您暂时限制用�
 [144]: http://en.wikipedia.org/wiki/Tiled_rendering
 
 ###系统
------------------------------------------------------------
 ####应用使用情况统计信息
 现在可以利用新增的 [android.app.usage][145] API 访问 Android 设备上的应用使用历史记录。此 API 提供比已弃用的 [getRecentTasks()][146] 方法更为详细的使用信息。要使用此 API，您必须先在清单中声明 "android.permission.PACKAGE_USAGE_STATS" 权限。用户还必须通过 Settings > Security > Apps 为该应用启用访问使用情况的权限。
 
@@ -480,7 +475,6 @@ Android 5.0 引入了一个全新的固定屏幕 API，可让您暂时限制用�
 [146]: https://developer.android.google.cn/reference/android/app/ActivityManager.html#getRecentTasks(int,%20int)
 
 ###测试与辅助工具
-----------------------------------------------------------
 ####测试与辅助工具改进
 Android 5.0 添加了以下测试与无障碍功能支持：
 
@@ -501,7 +495,6 @@ Android 5.0 添加了以下测试与无障碍功能支持：
 [155]: https://developer.android.google.cn/reference/android/speech/tts/Voice.html
 
 ###IME
---------------------------------------------------------
 ####更方便的输入语言切换
 从 Android 5.0 开始，用户可以更方便地在平台支持的所有[输入法编辑器 (IME)][156] 之间切换。执行指定的切换操作（通常是触摸软键盘上的地球图标）可在所有此类 IME 中循环切换。此行为变更是由 [shouldOfferSwitchingToNextInputMethod()][157] 方法实现的。
 
@@ -515,7 +508,6 @@ Android 5.0 添加了以下测试与无障碍功能支持：
 [159]: https://developer.android.google.cn/guide/topics/text/creating-input-method.html
 
 ###清单声明
---------------------------------------------------------
 ####可声明的必备功能
 现在支持在 [`<uses-feature>`][160] 元素中使用以下值，以便您确保只在提供应用所需功能的设备上安装您的应用。
 
