@@ -49,7 +49,7 @@
 - [Marshmallow棉花糖](marshmallow.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
     - [Android 6.0 APIs](android-6.0.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
     - [Android 6.0变更](android-6.0-changes.md)
-    - [Android 6.0示例](android-6.0-samples.md)
+    - [Android 6.0示例](android-6.0-samples.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
     - [Android 6.0测试](android-6.0-testing.md)
 - [Lollipop棒棒糖](lollipop.md)
     - [Android 5.1 APIs](android-5.1.md) - @[harrymwz](https://github.com/harrymwz)
