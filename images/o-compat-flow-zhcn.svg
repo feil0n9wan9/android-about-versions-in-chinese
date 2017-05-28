@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 627 578.4" style="enable-background:new 0 0 627 578.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#979797;stroke-width:2;stroke-linecap:square;stroke-dasharray:4,4;}
+	.st1{fill:#66B33B;}
+	.st2{fill:#8EC2D5;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'NotoSansCJKsc-Bold-GBpc-EUC-H';}
+	.st5{font-size:18px;}
+	.st6{font-family:'Roboto-Medium';}
+	.st7{enable-background:new    ;}
+	.st8{fill:#6F7172;}
+	.st9{font-family:'NotoSansCJKsc-Regular-GBpc-EUC-H';}
+	.st10{font-size:16px;}
+	.st11{font-family:'Roboto-Light';}
+	.st12{font-family:'Roboto-Regular';}
+</style>
+<title>MD_兼容性</title>
+<g>
+	<path class="st0" d="M112.4,84.9v489.5"/>
+	<path class="st1" d="M1.4,509.4c0-2.2,1.8-4,4-4h188c2.2,0,5,1.5,6.2,3.3l19.9,29.4c1.2,1.8,1.2,4.8,0,6.6l-19.9,29.4
+		c-1.2,1.8-4,3.3-6.2,3.3H5.4c-2.2,0-4-1.8-4-4C1.4,573.4,1.4,509.4,1.4,509.4z"/>
+	<path class="st2" d="M220.6,2.4c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9L117.4,83.9c-2.2,0.5-5.7,0.5-7.8,0L6.3,60.7
+		c-2.2-0.5-3.9-2.7-3.9-4.9V6.4c0-2.2,1.8-4,4-4l0,0H220.6L220.6,2.4z M218.6,129.4c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9
+		l-103.4,23.2c-2.2,0.5-5.7,0.5-7.8,0L4.3,187.7c-2.2-0.5-3.9-2.7-3.9-4.9v-49.4c0-2.2,1.8-4,4-4l0,0H218.6L218.6,129.4z
+		 M219.6,257.4c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9l-103.4,23.2c-2.2,0.5-5.7,0.5-7.8,0L5.3,315.7
+		c-2.2-0.5-3.9-2.7-3.9-4.9v-49.4c0-2.2,1.8-4,4-4l0,0L219.6,257.4L219.6,257.4z M214.6,378.7c4.4,0,8,3.6,8,8l0.1,41.4
+		c0,4.4-3.5,8.8-7.8,9.7l-95.5,21.4c-4.3,1-11.3,1-15.6,0L8.2,437.8c-4.3-1-7.8-5.3-7.8-9.7v-41.4c0-4.4,3.6-8,8-8L214.6,378.7
+		L214.6,378.7z"/>
+	<text transform="matrix(1 0 0 1 32.6364 38.9637)" class="st3 st4 st5">获取 </text>
+	<text transform="matrix(1 0 0 1 72.7364 39.4215)" class="st3 st6 st5">Android O</text>
+	<text transform="matrix(1 0 0 1 153.1364 39.4215)" class="st3 st4 st5"> 映像</text>
+	<text transform="matrix(1 0 0 1 76.5501 165.9786)" class="st3 st4 st5">查看变更</text>
+	<text transform="matrix(1 0 0 1 94.5501 293.9786)" class="st3 st4 st5">测试</text>
+	<text transform="matrix(1 0 0 1 94.5499 414.9786)" class="st3 st4 st5">更新</text>
+	<text transform="matrix(1 0 0 1 92.9 545.4214)" class="st3 st4 st5">发布</text>
+	<text id="下载_An..._1_" transform="matrix(1 0 0 1 240.325 15.7608)" class="st7"><tspan x="0" y="0" class="st8 st9 st10">下载</tspan><tspan x="32" y="0" class="st8 st11 st10"> Android O </tspan><tspan x="109" y="0" class="st8 st9 st10">系统映像并刷入您的设备，或者获取</tspan><tspan x="365" y="0" class="st8 st11 st10">  </tspan><tspan x="0" y="23" class="st8 st11 st10">Android O </tspan><tspan x="73.1" y="23" class="st8 st9 st10">系统映像针对模拟器。</tspan></text>
+	<text id="查看系统行..." transform="matrix(1 0 0 1 240.325 143.9786)" class="st8 st9 st10">查看系统行为变更以确定您的应用可能受影响的方面。</text>
+	<text id="将您的应用..._1_" transform="matrix(1 0 0 1 240.325 273.5088)" class="st7"><tspan x="0" y="0" class="st8 st9 st10">将您的应用安装到设备或模拟器上并运行测试。 聚焦 </tspan><tspan x="0" y="23" class="st8 st9 st10">系统行为变更并完成所有应用流程。</tspan></text>
+	<text transform="matrix(1 0 0 1 240.325 396.2038)" class="st8 st9 st10">执行所需的任何代码更改以支持行为变更或解决问题。 </text>
+	<text transform="matrix(1 0 0 1 240.325 415.4038)" class="st8 st9 st10">使用相同的</text>
+	<text transform="matrix(1 0 0 1 320.325 415.6216)" class="st8 st12 st10"> API </text>
+	<text transform="matrix(1 0 0 1 353.125 415.4038)" class="st8 st9 st10">级别重新编译 - 无需锁定</text>
+	<text transform="matrix(1 0 0 1 525.825 415.6216)" class="st8 st12 st10"> Android O</text>
+	<text transform="matrix(1 0 0 1 600.525 415.4038)" class="st8 st9 st10">。 </text>
+	<text transform="matrix(1 0 0 1 242.325 543.7608)" class="st8 st9 st10">签署、上传并发布更新的</text>
+	<text transform="matrix(1 0 0 1 418.325 543.9786)" class="st8 st12 st10"> APK</text>
+	<text transform="matrix(1 0 0 1 452.825 543.7608)" class="st8 st9 st10">。</text>
+</g>
+</svg>
