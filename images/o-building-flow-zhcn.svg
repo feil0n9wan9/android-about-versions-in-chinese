@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 654 911" style="enable-background:new 0 0 654 911;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6F7172;}
+	.st1{font-family:'NotoSansCJKsc-Regular-GBpc-EUC-H';}
+	.st2{font-size:16px;}
+	.st3{font-family:'Roboto-Regular';}
+	.st4{enable-background:new    ;}
+	.st5{fill:none;stroke:#979797;stroke-width:2;stroke-linecap:square;stroke-dasharray:4,4;}
+	.st6{fill:#6197AF;}
+	.st7{fill:#FFFFFF;}
+	.st8{font-family:'NotoSansCJKsc-Bold-GBpc-EUC-H';}
+	.st9{font-size:18px;}
+	.st10{font-family:'Roboto-Medium';}
+	.st11{fill:#333333;}
+	.st12{fill:#66B33B;}
+</style>
+<title>Migration diagram_针对 O 进行开发</title>
+<g>
+	<text transform="matrix(1 0 0 1 243 16.3393)" class="st0 st1 st2">安装</text>
+	<text transform="matrix(1 0 0 1 275 16.5571)" class="st0 st3 st2"> Android Studio 3.0 Canary </text>
+	<text transform="matrix(1 0 0 1 467.9 16.3393)" class="st0 st1 st2">以针对</text>
+	<text transform="matrix(1 0 0 1 515.9 16.5571)" class="st0 st3 st2"> Android O  </text>
+	<text transform="matrix(1 0 0 1 243 39.3393)" class="st0 st1 st2">开发应用。 确保您拥有</text>
+	<text transform="matrix(1 0 0 1 406.6 39.5571)" class="st0 st3 st2"> Android O </text>
+	<text transform="matrix(1 0 0 1 485.2 39.3393)" class="st0 st1 st2">设备或模拟器。  </text>
+	<text transform="matrix(1 0 0 1 243 62.3393)" class="st0 st1 st2">更新您的目标</text>
+	<text transform="matrix(1 0 0 1 339 62.5571)" class="st0 st3 st2"> SDK </text>
+	<text transform="matrix(1 0 0 1 376.9 62.3393)" class="st0 st1 st2">版本和其他构建配置。</text>
+	<text transform="matrix(1 0 0 1 243 144.3393)" class="st0 st1 st2">查看适用于针对</text>
+	<text transform="matrix(1 0 0 1 355 144.5571)" class="st0 st3 st2"> Android O </text>
+	<text transform="matrix(1 0 0 1 433.6 144.3393)" class="st0 st1 st2">的应用的系统行为变更。 </text>
+	<text transform="matrix(1 0 0 1 243 167.3393)" class="st0 st1 st2">确定您的应用可能受影响的方面并规划如何提供支持。</text>
+	<text id="执行所需的..._1_" transform="matrix(1 0 0 1 243 267.0873)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">执行所需的代码或架构更改以支持 Android O 应用的 </tspan><tspan x="0" y="23" class="st0 st1 st2">新后台限制和其他行为变更。</tspan></text>
+	<text transform="matrix(1 0 0 1 243 389.7822)" class="st0 st1 st2">充分利用</text>
+	<text transform="matrix(1 0 0 1 307 390)" class="st0 st3 st2"> Android O API </text>
+	<text transform="matrix(1 0 0 1 414.5 389.7822)" class="st0 st1 st2">为您的应用增加新特性和功能。 </text>
+	<text transform="matrix(1 0 0 1 243 412.7822)" class="st0 st1 st2">针对</text>
+	<text transform="matrix(1 0 0 1 275 413)" class="st0 st3 st2"> Android O </text>
+	<text transform="matrix(1 0 0 1 353.6 412.7822)" class="st0 st1 st2">重新编译。</text>
+	<text transform="matrix(1 0 0 1 433.6 413)" class="st0 st3 st2"> </text>
+	<text transform="matrix(1 0 0 1 245 514.7822)" class="st0 st1 st2">在</text>
+	<text transform="matrix(1 0 0 1 261 515)" class="st0 st3 st2"> Android O </text>
+	<text transform="matrix(1 0 0 1 339.6 514.7822)" class="st0 st1 st2">设备或模拟器上运行测试。聚焦您的应用 </text>
+	<text transform="matrix(1 0 0 1 245 537.7822)" class="st0 st1 st2">可能会受后台限制或其他行为影响的方面。试用新 </text>
+	<text transform="matrix(1 0 0 1 600.6 538)" class="st0 st3 st2">API</text>
+	<text transform="matrix(1 0 0 1 625.5 537.7822)" class="st0 st1 st2">。 </text>
+	<text transform="matrix(1 0 0 1 245 560.7822)" class="st0 st1 st2">报告任何平台、 </text>
+	<text transform="matrix(1 0 0 1 360.6 561)" class="st0 st3 st2">API </text>
+	<text transform="matrix(1 0 0 1 389.4 560.7822)" class="st0 st1 st2">或第三方</text>
+	<text transform="matrix(1 0 0 1 453.4 561)" class="st0 st3 st2"> SDK </text>
+	<text transform="matrix(1 0 0 1 491.4 560.7822)" class="st0 st1 st2">问题。</text>
+	<text transform="matrix(1 0 0 1 243 718.7822)" class="st0 st1 st2">最终</text>
+	<text transform="matrix(1 0 0 1 275 719)" class="st0 st3 st2"> API </text>
+	<text transform="matrix(1 0 0 1 307.8 718.7822)" class="st0 st1 st2">发布后，重新更新您的目标 SDK 版本和其他构 </text>
+	<text transform="matrix(1 0 0 1 243 741.7822)" class="st0 st1 st2">建配置，执行任何最后更新并运行测试。</text>
+	<text transform="matrix(1 0 0 1 245 865.9102)" class="st0 st1 st2">签署、上传并发布更新的</text>
+	<text transform="matrix(1 0 0 1 421 866.128)" class="st0 st3 st2"> APK</text>
+	<text transform="matrix(1 0 0 1 455.5 865.9102)" class="st0 st1 st2">。</text>
+	<path class="st5" d="M115,85.5V575 M115,786.3v91"/>
+	<path class="st6" d="M223.2,3c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9L120.1,84.5c-2.2,0.5-5.7,0.5-7.8,0L8.9,61.3
+		C6.7,60.8,5,58.6,5,56.4V7c0-2.2,1.8-4,4-4l0,0H223.2L223.2,3z M223.2,703.8c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9
+		L120,785.3c-2.2,0.5-5.7,0.5-7.8,0L8.9,762.1c-2.2-0.5-3.9-2.7-3.9-4.9v-49.4c0-2.2,1.8-4,4-4l0,0L223.2,703.8L223.2,703.8z
+		 M221.2,130c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9L118,211.5c-2.2,0.5-5.7,0.5-7.8,0L6.9,188.3c-2.2-0.5-3.9-2.7-3.9-4.9
+		V134c0-2.2,1.8-4,4-4l0,0H221.2L221.2,130z M222.2,258c2.2,0,4,1.8,4,4l0.1,49.4c0,2.2-1.7,4.4-3.9,4.9L119,339.5
+		c-2.2,0.5-5.7,0.5-7.8,0L7.9,316.3c-2.2-0.5-3.9-2.7-3.9-4.9V262c0-2.2,1.8-4,4-4l0,0H222.2L222.2,258z M217.2,379c4.4,0,8,3.6,8,8
+		l0.1,41.4c0,4.4-3.5,8.8-7.8,9.7L122,459.6c-4.3,1-11.3,1-15.6,0l-95.6-21.4c-4.3-1-7.8-5.3-7.8-9.7V387c0-4.4,3.6-8,8-8H217.2
+		L217.2,379z M216.2,499.6c4.4,0,8,3.6,8,8l0.1,41.4c0,4.4-3.5,8.8-7.8,9.7L121,580.1c-4.3,1-11.3,1-15.6,0L9.8,558.7
+		c-4.3-1-7.8-5.3-7.8-9.7v-41.4c0-4.4,3.6-8,8-8H216.2L216.2,499.6z"/>
+	<text transform="matrix(1 0 0 1 35.2978 39.5423)" class="st7 st8 st9">获取 </text>
+	<text transform="matrix(1 0 0 1 75.3978 40.0001)" class="st7 st10 st9">Android O SDK</text>
+	<text transform="matrix(1 0 0 1 78.6502 740.823)" class="st7 st8 st9">最终更新</text>
+	<text transform="matrix(1 0 0 1 78.6498 167.0001)" class="st7 st8 st9">查看变更</text>
+	<text id="支持后台_..." transform="matrix(1 0 0 1 60.6502 287.5571)" class="st7 st8 st9">支持后台限制</text>
+	<text transform="matrix(1 0 0 1 34.3401 415.0992)" class="st7 st8 st9">采用 </text>
+	<text transform="matrix(1 0 0 1 74.4401 415.557)" class="st7 st10 st9">Android O</text>
+	<text transform="matrix(1 0 0 1 154.8401 415.557)" class="st7 st8 st9"> 功能</text>
+	<text transform="matrix(1 0 0 1 96.6498 540)" class="st7 st8 st9">测试</text>
+	<text transform="matrix(1 0 0 1 5 670.3652)" class="st11 st8 st9">最终 </text>
+	<text transform="matrix(1 0 0 1 45.1 670.823)" class="st11 st10 st9">API</text>
+	<text transform="matrix(1 0 0 1 73.7 670.823)" class="st11 st8 st9"> 发布后…</text>
+	<path class="st12" d="M8,834.8c0-2.2,1.8-4,4-4h188c2.2,0,5,1.5,6.2,3.3l20,29.4c1.2,1.8,1.2,4.8,0,6.6l-20,29.4
+		c-1.2,1.8-4,3.3-6.2,3.3H12c-2.2,0-4-1.8-4-4V834.8L8,834.8z"/>
+	<text transform="matrix(1 0 0 1 99.5501 870.823)" class="st7 st8 st9">发布</text>
+</g>
+</svg>
