@@ -1,20 +1,20 @@
 # 迁移应用到Android O
 Android O引入了若干新的功能和API，并加入了即便您未对应用做任何更改仍可能对其行为产生影响的一些变动。为帮助您做好准备，本页面将说明如何执行兼容性测试，以及如何更新应用以便利用Android O的新功能：
-* [确保平台兼容性](preview-migration.html#ct)
+* [确保平台兼容性](migration.html#ct)
 
 验证您的应用能够在新版本平台上全功能运行。在此阶段，您不需要使用新的API，也不需要更改应用的`targetSdkVersion`，但可能需要进行一些细微的更改。
 
-* [使用Android O SDK构建应用](preview-migration.html#bfa)
+* [使用Android O SDK构建应用](migration.html#bfa)
 
 当您准备好利用平台的新功能时，将`targetSdkVersion`更新至“O”，验证应用是否仍可按预期方式运行，然后开始使用新的API。
-![](images/o-phases.svg)
+![](../images/o-phases.svg)
 
 ### 确保平台兼容性
 这一步的目标是确保应用在Android O上可照常运行。由于一些平台变化可能影响应用的行为方式，因此可能需要进行一些调整，但您不需要使用新的API或更改`targetSdkVersion`。
-![](images/o-compat-flow-zhcn.svg)
+![](../images/o-compat-flow-zhcn.svg)
 
 ### 准备一台运行Android O的设备
-* 如果您有一台兼容设备（Pixel、Pixel XL、Pixel C、Nexus 5X、Nexus 6P或Nexus Player），请从[下载](preview-download.html)页面获得适合您的设备的Android O系统映像，然后按照说明[将映像刷入设备](https://developers.google.cn/android/images#instructions)。
+* 如果您有一台兼容设备（Pixel、Pixel XL、Pixel C、Nexus 5X、Nexus 6P或Nexus Player），请从[下载](download.html)页面获得适合您的设备的Android O系统映像，然后按照说明[将映像刷入设备](https://developers.google.cn/android/images#instructions)。
 * 或下载适用于Android Emulator的Android O系统映像。它列于[SDK 管理器](https://developer.android.google.cn/studio/intro/update.html##sdk-manager)的**Android O Preview**下，显示为**Google APIs Intel x86 Atom System Image**。
 > 注：Android O系统映像只能通过[Android Studio 3.0 Canary](https://developer.android.google.cn/studio/preview/index.html)下载。如需了解详细信息，请参阅下面一节以[获取Android O SDK](https://developer.android.google.cn/preview/migration.html##ptb)。
 
@@ -29,17 +29,17 @@ Android O引入了若干新的功能和API，并加入了即便您未对应用�
 :--|:--|:--
 后台位置更新频率下降|如果应用接收来自后台服务的位置更新，则其在Android O上接收更新的频率要比旧版本Android低。具体地讲，后台服务接收位置更新的频率不能超过每小时几次。不过，当应用位于前台时，位置更新频率不变。|[后台位置限制](https://developer.android.google.cn/preview/features/background-location-limits.html)
 不再支持`net.hostname`|查询`net.hostname`系统属性返回的结果为空。|无
-[send(DatagramPacket)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket))引发新异常|如果之前执行的[connect(InetAddress, int)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#connect(java.net.InetAddress, int))方法失败，[send(DatagramPacket)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket))方法会引发[SocketException](https://developer.android.google.cn/reference/java/net/SocketException.html)。|[行为变更：网络连接和HTTP(S)连接](preview-behavior-changes.html#networking-all)
-[AbstractCollection](https://developer.android.google.cn/reference/java/util/AbstractCollection.html)方法引发正常的[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)|现在，[AbstractCollection.removeAll(null)](https://developer.android.google.cn/reference/java/util/AbstractCollection.html#removeAll(java.util.Collection<?>))和[AbstractCollection.retainAll(null)](https://developer.android.google.cn/reference/java/util/AbstractCollection.html#retainAll(java.util.Collection<?>))始终引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)；之前，当集合为空时不会引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)。此项变更使行为符合文档要求。|[行为变更：集合的处理](preview-behavior-changes.html#ch-all)
-[Currency.getDisplayName(null)](https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName())引发正常的[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)|调用[Currency.getDisplayName(null)](https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName())会引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)。|[行为变更：语言区域和国际化](preview-behavior-changes.html#lai)
+[send(DatagramPacket)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket))引发新异常|如果之前执行的[connect(InetAddress, int)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#connect(java.net.InetAddress, int))方法失败，[send(DatagramPacket)](https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket))方法会引发[SocketException](https://developer.android.google.cn/reference/java/net/SocketException.html)。|[行为变更：网络连接和HTTP(S)连接](behavior-changes.html#networking-all)
+[AbstractCollection](https://developer.android.google.cn/reference/java/util/AbstractCollection.html)方法引发正常的[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)|现在，[AbstractCollection.removeAll(null)](https://developer.android.google.cn/reference/java/util/AbstractCollection.html#removeAll(java.util.Collection<?>))和[AbstractCollection.retainAll(null)](https://developer.android.google.cn/reference/java/util/AbstractCollection.html#retainAll(java.util.Collection<?>))始终引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)；之前，当集合为空时不会引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)。此项变更使行为符合文档要求。|[行为变更：集合的处理](behavior-changes.html#ch-all)
+[Currency.getDisplayName(null)](https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName())引发正常的[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)|调用[Currency.getDisplayName(null)](https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName())会引发[NullPointerException](https://developer.android.google.cn/reference/java/lang/NullPointerException.html)。|[行为变更：语言区域和国际化](behavior-changes.html#lai)
 
-如需查看更详尽的Android O行为变更列表，另请参阅[Android O行为变更](preview-behavior-changes.html)。
+如需查看更详尽的Android O行为变更列表，另请参阅[Android O行为变更](behavior-changes.html)。
 
 ### 构建具有Android O功能的应用
 如表 2所述，除了提供新的API外，Android O还会在您更新`targetSdkVersion`时引发其他行为变更。本节说明如何将开发环境设置为以新平台为目标，以及如何着手构建和测试Android O API带来的变化和新功能。
-> **注**：上述旨在[确保平台兼容性](preview-migration.html#ec)的步骤是面向Android O构建应用的先决条件，因此请您务必先完成这些步骤。
+> **注**：上述旨在[确保平台兼容性](migration.html#ec)的步骤是面向Android O构建应用的先决条件，因此请您务必先完成这些步骤。
 
-![](images/o-building-flow-zhcn.svg)
+![](../images/o-building-flow-zhcn.svg)
 
 ### 获取Android O SDK
 * [安装Android Studio 3.0 Canary](https://developer.android.google.cn/studio/preview/index.html)。
@@ -50,7 +50,7 @@ Android O引入了若干新的功能和API，并加入了即便您未对应用�
 * 在**SDK Platforms**标签中，选中**Show Package Details**。在**Android O Preview**下选中下列项：
     * **Android SDK Platform O**
     * **Google APIs Intel x86 Atom System Image**（只需在使用模拟器时选中）
-* 切换到**SDK Tools**标签，选中所有已提供更新的项（点击每个显示破折号![](images/sdk-manager-icon-update_2-0_2x.png)的复选框）。这应该包括下列必需项：
+* 切换到**SDK Tools**标签，选中所有已提供更新的项（点击每个显示破折号![](../images/sdk-manager-icon-update_2-0_2x.png)的复选框）。这应该包括下列必需项：
     * **Android SDK Build-Tools 26.0.0**（rc2 或更高版本）
     * **Android SDK Platform-Tools 26.0.0**（rc2 或更高版本）
     * **Android Emulator 26.0.0**
@@ -104,13 +104,13 @@ repositories {
 
 变化|摘要|其他参考资料
 :--|:--|:--
-隐私性|Android O不支持使用net.dns1、net.dns2、net.dns3或net.dns4系统属性。|[行为变更：隐私性](preview-behavior-changes.html#pr)
-实行了可写且可执行的代码段|对于原生库，Android O实行的规则是：数据不应可执行，代码不应可写。|[行为变更：原生库](preview-behavior-changes.html#ndk)
-ELF标头和节验证|动态链接器对ELF标头和节头中的更多值进行检查，如果值无效则失败。|[行为变更：原生库](preview-behavior-changes.html#ndk)
-通知|以SDK的Android O版本为目标平台的应用必须实现一个或多个通知渠道，以便向用户发布通知|[](preview-api-overview.html#notifications)
-[List.sort()](https://developer.android.google.cn/reference/java/util/List.html#sort(java.util.Comparator<? super E>))方法|该方法的实现不得再调用[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))，否则应用将因堆栈溢出而引发异常。|[行为变更：集合的处理](preview-behavior-changes.html#o-ch)
-[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))方法|在列表实现中，[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))现在会引发[ConcurrentModificationException](https://developer.android.google.cn/reference/java/util/ConcurrentModificationException.html)。|[行为变更：集合的处理](preview-behavior-changes.html#o-ch)
+隐私性|Android O不支持使用net.dns1、net.dns2、net.dns3或net.dns4系统属性。|[行为变更：隐私性](behavior-changes.html#pr)
+实行了可写且可执行的代码段|对于原生库，Android O实行的规则是：数据不应可执行，代码不应可写。|[行为变更：原生库](behavior-changes.html#ndk)
+ELF标头和节验证|动态链接器对ELF标头和节头中的更多值进行检查，如果值无效则失败。|[行为变更：原生库](behavior-changes.html#ndk)
+通知|以SDK的Android O版本为目标平台的应用必须实现一个或多个通知渠道，以便向用户发布通知|[](api-overview.html#notifications)
+[List.sort()](https://developer.android.google.cn/reference/java/util/List.html#sort(java.util.Comparator<? super E>))方法|该方法的实现不得再调用[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))，否则应用将因堆栈溢出而引发异常。|[行为变更：集合的处理](behavior-changes.html#o-ch)
+[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))方法|在列表实现中，[Collections.sort()](https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List<T>))现在会引发[ConcurrentModificationException](https://developer.android.google.cn/reference/java/util/ConcurrentModificationException.html)。|[行为变更：集合的处理](behavior-changes.html#o-ch)
 
-如需查看更详尽的Android O行为变更列表，请参阅[Android O行为变更](preview-behavior-changes.html)。
+如需查看更详尽的Android O行为变更列表，请参阅[Android O行为变更](behavior-changes.html)。
 
-要想探究Android O提供的新功能和新API，请参阅[Android O功能和API](preview-api-overview.html)。
+要想探究Android O提供的新功能和新API，请参阅[Android O功能和API](api-overview.html)。

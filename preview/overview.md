@@ -9,20 +9,20 @@
 |尽早做好支持新平台行为（例如新运行时权限模型和省电功能）的准备工作。|使用[Issue Tracker](https://developer.android.google.cn/preview/bugs)向我们报告问题并提供反馈。与[开发者社群](https://developer.android.google.cn/preview/dev-community)中的其他开发者建立联系。|
 
 ### 时间表和更新
-![](images/preview-overview/o-preview-updates.svg)
+![](../images/preview-overview/o-preview-updates.svg)
 
 O开发者预览从2017年3月21日开放下载，到向AOSP和OEM提供最终的Android O公开版本时停止使用，最终版本预计将于2017年第三季度发布。
 
 在开发阶段的各个关键里程碑，我们将为您的开发和测试环境提供更新。每个更新都包括SDK工具、预览版系统映像、模拟器、API参考和API差异。里程碑列表如下。
-* [预览 1](preview-release-notes.html)（初始版本，alpha）
-* [预览 2](preview-release-notes.html)（增量更新，beta）
-* [预览 3](preview-release-notes.html)（最终 API 和官方 SDK，在 Play 中发布）
-* [预览 4](preview-release-notes.html)（接近最终版本系统映像，用于最终测试）
+* [预览 1](release-notes.html)（初始版本，alpha）
+* [预览 2](release-notes.html)（增量更新，beta）
+* [预览 3](release-notes.html)（最终 API 和官方 SDK，在 Play 中发布）
+* [预览 4](release-notes.html)（接近最终版本系统映像，用于最终测试）
 * 向AOSP和生态系统发布**最终版本**
 
 对开发者而言，预览版早期的焦点是确保您当前的应用与新平台兼容，并提供早期反馈。在预览版的后期（其实贯穿整个预览版期间及之后），您的工作是调整自己应用中的功能，并锁定新平台。
 
-> [**请参阅迁移指南**](preview-migration.html)，了解让应用与新平台兼容的简单步骤，然后在您准备就绪后锁定新平台。
+> [**请参阅迁移指南**](migration.html)，了解让应用与新平台兼容的简单步骤，然后在您准备就绪后锁定新平台。
 
 **前两个预览版里程碑**提供**早期测试和开发环境**，帮助您发现当前应用中的兼容性问题，并针对新平台计划必要的迁移或功能工作。这是向我们提供功能和API以及文件兼容性问题反馈的优先期 — 请使用使用[Issue Tracker](https://developer.android.google.cn/preview/bugs)提交反馈。在更新期间，API可能会有变更。
 
@@ -49,7 +49,7 @@ O开发者预览包括您在各种使用不同屏幕尺寸、网络技术、CPU/
 ### 硬件系统映像
 O开发者预览包含可用于在物理设备上进行测试和开发的硬件系统映像。
 
-您可以从[下载页面](preview-download.html)为这些设备下载系统映像：
+您可以从[下载页面](download.html)为这些设备下载系统映像：
 * **Nexus 5X** (GSM/LTE) "bullhead"设备系统映像
 * **Nexus 6P** (GSM/LTE) "angler"设备系统映像
 * **Nexus Player** (Android TV) "fugu"设备系统映像
@@ -66,11 +66,11 @@ O开发者预览包含可用于在物理设备上进行测试和开发的硬件�
 
 ### 文档和示例代码
 开发者预览网站上提供的以下文档资源有助于您了解Android O：
-* [迁移到Android O](preview-migration.html)，提供入门指南的分步说明。
-* [行为变更](preview-behavior-changes.html)，带您了解主要测试领域。
-* 新API文档，包括[API概览](preview-api-overview.html)以及有关通知渠道和自动填充等主要功能的详细开发者指南。
-* [示例代码](preview-samples.html)，演示如何支持通知渠道和其他新功能。
-* O开发者当前版本的[版本说明](preview-release-notes.html)，包括变更说明。
+* [迁移到Android O](migration.html)，提供入门指南的分步说明。
+* [行为变更](behavior-changes.html)，带您了解主要测试领域。
+* 新API文档，包括[API概览](api-overview.html)以及有关通知渠道和自动填充等主要功能的详细开发者指南。
+* [示例代码](o-samples.html)，演示如何支持通知渠道和其他新功能。
+* O开发者当前版本的[版本说明](release-notes.html)，包括变更说明。
 
 #### API参考和差异报告
 预览版的完整[API参考](https://developer.android.google.cn/reference/index.html)可在线获取。新API添加有水印并显示“Android O开发者预览”。请注意，只有使用O预览SDK开发应用时才可以使用这些API。
@@ -95,6 +95,6 @@ Android O开发者提供**预览版 API** — 在最终的SDK发布之前，这�
 Google Play**禁止发布针对O开发者预览的应用**。当Android O最终版本SDK可用时，您可以锁定官方Android O API级别，并通过alpha、beta和生产发布渠道将应用发布至Google Play。与此同时，如果您需要将针对Android O的应用分发给测试者，则可随时通过电子邮件或直接从您的网站下载实现这一点。
 
 ### 如何上手
-要开始使用Android O，请[**下载系统映像**](preview-downloads.html)并将其安装在受支持的设备上，然后[**阅读迁移指南**](preview-migration.html)，了解针对O进行兼容性测试和开发的大致步骤。
+要开始使用Android O，请[**下载系统映像**](downloads.html)并将其安装在受支持的设备上，然后[**阅读迁移指南**](migration.html)，了解针对O进行兼容性测试和开发的大致步骤。
 
 感谢您加入Android O开发者预览计划！

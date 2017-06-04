@@ -1,11 +1,11 @@
 # 下载Android O
 欢迎使用Android O开发者预览！您可以从此页面下载适用于各种硬件设备（手机、平板电脑和电视，等等）的系统映像，然后使用这些设备测试自己的应用。
 
-要开始使用 Android O，请[**下载系统映像**](preview-download.html#flashable-images)并[**将其刷入您的设备**](preview-download.html#flash)。然后阅读[**计划概览**](preview-overview.html)了解时间表，阅读[**迁移指南**](preview-migration.html)，了解针对O提升兼容性和开发应用的步骤。
+要开始使用 Android O，请[**下载系统映像**](download.html#flashable-images)并[**将其刷入您的设备**](download.html#flash)。然后阅读[**计划概览**](overview.html)了解时间表，阅读[**迁移指南**](migration.html)，了解针对O提升兼容性和开发应用的步骤。
 
 请使用下面的链接和说明，将您受支持的设备更新到最新的里程碑构建版本。
 
-> **注意**：开发者预览1**仅面向开发者**，不适合日常使用或消费者使用。将其安装到您的设备上之前请先阅读[版本说明](preview-release-notes.html)。开发者预览1不支持通过Android Beta计划获取更新。
+> **注意**：开发者预览1**仅面向开发者**，不适合日常使用或消费者使用。将其安装到您的设备上之前请先阅读[版本说明](release-notes.html)。开发者预览1不支持通过Android Beta计划获取更新。
 
 ### 下载
 下载开发者预览1的系统映像。

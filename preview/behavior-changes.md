@@ -1,7 +1,7 @@
 # Android O行为变更
 Android O除了提供诸多新特性和功能外，还对系统和API行为做出了各种变更。本文重点介绍您应该了解并在开发应用时加以考虑的一些主要变更。
 
-其中大部分变更会影响所有应用，而不论应用针对的是何种版本的Android。不过，有几项变更仅影响针对Android O的应用。为清楚起见，本页面分为两个部分：[针对所有API级别的应用](preview-behavior-changes.html#all-apps)和[针对Android O的应用](preview-behavior-changes.html#o-apps)。
+其中大部分变更会影响所有应用，而不论应用针对的是何种版本的Android。不过，有几项变更仅影响针对Android O的应用。为清楚起见，本页面分为两个部分：[针对所有API级别的应用](behavior-changes.html#all-apps)和[针对Android O的应用](behavior-changes.html#o-apps)。
 
 ### 针对所有API级别的应用
 这些行为变更适用于在Android O平台上运行的 所有应用，无论这些应用是针对哪个API级别构建。所有开发者都应查看这些变更，并修改其应用以正确支持这些变更（如果适用）。
@@ -143,7 +143,7 @@ Android O对应用快捷键做出了以下变更：
 
 ...那么，这些窗口将始终显示在使用[TYPE_APPLICATION_OVERLAY](https://developer.android.google.cn/reference/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY)窗口类型的窗口下方。如果应用针对的是Android O，则应用会使用[TYPE_APPLICATION_OVERLAY](https://developer.android.google.cn/reference/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY)窗口类型来显示提醒窗口。
 
-如需了解详细信息，请参阅[针对Android O的应用](preview-behavior-changes.html#ato)的行为变更内的[提醒窗口的常用窗口类型](preview-behavior-changes.html#cwt)部分。
+如需了解详细信息，请参阅[针对Android O的应用](behavior-changes.html#ato)的行为变更内的[提醒窗口的常用窗口类型](behavior-changes.html#cwt)部分。
 
 #### 企业中的Android
 Android O包含会影响企业应用的变更。如果您正在为企业构建应用，包括DPC（设备规范控制器），您应查阅[企业中的Android](https://developer.android.google.cn/preview/features/work.html#behavior-changes)页面中介绍的变更，并相应修改您的应用。
@@ -230,7 +230,7 @@ public void sort(Comparator<? super E> comparator) {
 
 Android O已弃用[LOGIN_ACCOUNTS_CHANGED_ACTION](https://developer.android.google.cn/reference/android/accounts/AccountManager.html#LOGIN_ACCOUNTS_CHANGED_ACTION)。相反，应用在运行时应使用[addOnAccountsUpdatedListener()](https://developer.android.google.cn/reference/android/accounts/AccountManager.html#addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean))获取帐号更新信息。
 
-有关新增API和增加的帐号访问和可检测性方法的信息，请参阅此文档的“新增 API”部分中的[帐号访问和可检测性](preview-api-overview.html#naa)。
+有关新增API和增加的帐号访问和可检测性方法的信息，请参阅此文档的“新增 API”部分中的[帐号访问和可检测性](api-overview.html#naa)。
 
 #### 提醒窗口
 使用[SYSTEM_ALERT_WINDOW](https://developer.android.google.cn/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW)权限的应用无法再使用以下窗口类型来在其他应用和系统窗口上方显示提醒窗口：
