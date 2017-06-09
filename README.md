@@ -24,12 +24,12 @@
 ## 参与方式
 
 如果您想加入此协作项目，参与翻译和校对，可以通过如下步骤：
-* fork主仓库（<https://github.com/feil0n9wan9/android-about-versions-in-chinese>）。
-* 申领翻译。在项目的README.md文件里找到还没有被人申领的页面，写上“@你的github账号”，然后给主仓库的`master`分支提交pull request。
-* 开始翻译。提交的pull request被确认、合并到主仓库后，代表你申请的页面占位完成，您就可以开始翻译。
-* 提交翻译。翻译完成后请提交pull request给主仓库的`master`分支。
-* 核校翻译。翻译好的文档会进一步核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
-* 发布文档。全部翻译完成后将生成PDF文档并以网页形式发布。
+1. Fork主仓库（<https://github.com/feil0n9wan9/android-about-versions-in-chinese>）。
+2. 认领翻译。在项目的README.md文件里找到还没有被人认领的页面，写上“@你的github账号”，然后给主仓库的`master`分支提交pull request。
+3. 开始翻译。提交的pull request被确认、合并到主仓库后，代表你申请的页面占位完成，您就可以开始翻译。
+4. 提交翻译。翻译完成后请提交pull request给主仓库的`master`分支。
+5. 核校翻译。翻译好的文档会进一步核校，核校完成后，从主仓库的`master`分支合并到`publish`分支。
+6. 发布文档。全部翻译完成后将生成PDF文档并以网页形式发布。
 
 
 ## 项目规范
