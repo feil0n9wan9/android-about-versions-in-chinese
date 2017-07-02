@@ -137,9 +137,9 @@ Android 7.0现在允许用户在设置中选择多个区域，以便更好地支
 
 ### 新的Emojis
 Android 7.0引入了更多的emojis表情和emojis相关的功能，包括肤色选择和变体选择。如果您的应用程序支持emojis表情，请按照下列指南来使用这些emojis相关的功能。
-* 在插入emojis表情之前，请检查设备是否包含该emojis表情。要检查系统字体中存在哪些emojis表情，请使用[hasGlyph(String)](https://developer.android.com/reference/android/graphics/Paint.html#hasGlyph(java.lang.String))方法。
+* 在插入emojis表情之前，请检查设备是否包含该emojis表情。要检查系统字体中存在哪些emojis表情，请使用[hasGlyph(String)](https://developer.android.com/reference/android/graphics/Paint.html#hasGlyph&#40;java.lang.String&#41;)方法。
 * 检查emojis表情是否支持变体选择。变体选择器允许您以彩色或黑白来显示某个emojis表情。在移动设备上，应用应以彩色而不是黑白表示emojis表情。但是，如果您的应用程序是在文本中显示emojis表情，则应使用黑白变体。要确定某个emojis表情是否有变化，请使用变体选择器。有关完整的、包含变体的字符列表，请查看[Unicode文档关于变体](http://www.unicode.org/Public/9.0.0/ucd/StandardizedVariants-9.0.0d1.txt)的emojis变体序列部分。
-* 检查emojis表情是否支持肤色。Android 7.0允许用户根据自己的喜好修改emojis表情的渲染肤色。输入法应用程序应该为具有多种肤色的emojis表情提供可视指示，并应允许用户选择他们喜欢的肤色。要确定哪个系统emojis表情支持肤色选择，请使用[hasGlyph(String)](https://developer.android.com/reference/android/graphics/Paint.html#hasGlyph(java.lang.String))方法。您可以通过阅读[Unicode文档](http://unicode.org/emoji/charts/full-emoji-list.html)来确定哪些emojis表情应该使用肤色。
+* 检查emojis表情是否支持肤色。Android 7.0允许用户根据自己的喜好修改emojis表情的渲染肤色。输入法应用程序应该为具有多种肤色的emojis表情提供可视指示，并应允许用户选择他们喜欢的肤色。要确定哪个系统emojis表情支持肤色选择，请使用[hasGlyph(String)](https://developer.android.com/reference/android/graphics/Paint.html#hasGlyph&#40;java.lang.String&#41;)方法。您可以通过阅读[Unicode文档](http://unicode.org/emoji/charts/full-emoji-list.html)来确定哪些emojis表情应该使用肤色。
 
 ### ICU4J APIs
 现在，Android 7.0在框架的`android.icu`包下提供了一个[ICU4J](http://site.icu-project.org/) API的子集。迁移很容易，大多数情况下只需要将命名空间从`com.java.icu`更改为`android.icu`。如果您已经在应用程序中使用ICU4J软件包，切换到Android框架提供的`android.icu` API则可以大幅减小APK体积。
@@ -318,7 +318,7 @@ Android 7.0中，打印服务开发者现在可以显示打印机和打印作业
 
 您可以使用帧度量API来测量发布产品的交互级UI性能，而无需使用USB连接。此API允许以比`adb shell dumpsys gfxinfo`高得多的粒度收集数据。这种更高的粒度是可能的，因为系统可以收集应用中特定交互的数据，而不需要捕获整个应用程序性能的全局摘要，或清除任何全局状态。您可以使用此功能收集性能数据，并捕获应用程序实际使用的UI性能回归。
 
-要监视窗口，请实现[OnFrameMetricsAvailableListener.onFrameMetricsAvailable](https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable(android.view.Window, android.view.FrameMetrics, int))回调方法并将其注册在要监视的窗口上。
+要监视窗口，请实现[OnFrameMetricsAvailableListener.onFrameMetricsAvailable](https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable&#40;android.view.Window, android.view.FrameMetrics, int&#41;)回调方法并将其注册在要监视的窗口上。
 
 该API还提供了一个[FrameMetrics](https://developer.android.com/reference/android/view/FrameMetrics.html)对象，其中包含渲染子系统报告帧生命周期中各种关键的的时间点数据。目前支持的度量为：`UNKNOWN_DELAY_DURATION`，`INPUT_HANDLING_DURATION`，`ANIMATION_DURATION`，`LAYOUT_MEASURE_DURATION`，`DRAW_DURATION`，`SYNC_DURATION`，`COMMAND_ISSUE_DURATION`，`SWAP_BUFFERS_DURATION`，`TOTAL_DURATION`和`FIRST_DRAW_FRAME`。
 
