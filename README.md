@@ -40,6 +40,13 @@
 ## 目录结构
 
 - [序言](README.md)
+- [Oreo奥利奥](oreo/index.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [Android 8.0功能和APIs](oreo/android-8.0.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [Android 8.0行为变更](oreo/android-8.0-changes.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [迁移到Android 8.0](oreo/android-8.0-migration.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [Android 8.0示例](oreo/android-8.0-samples.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [后台执行限制](oreo/background.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
+    - [后台位置限制](oreo/background-location-limits.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
 - [Nougat牛轧糖](nougat.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
     - [Android 7.1于开发者](android-7.1.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
     - [Android 7.1示例](android-7.1-samples.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
@@ -63,15 +70,6 @@
     - [Android 4.1 APIs](android-4.1.md)
 - [关于Android](android.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
 - [数据表](dashboards.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-- [Android O开发者预览](preview/index.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [下载](preview/download.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [进程概述](preview/overview.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [迁移应用到Android O](preview/migration.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [Android O行为变更](preview/behavior-changes.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [Android O功能和APIs](preview/api-overview.md) - @[feil0n9wan9](https://github.com/feil0n9wan9)
-    - [代码示例](preview/o-samples.md)
-    - [反馈](preview/feedback.md)
-    - [发布说明](preview/release-notes.md)
 
 
 ## 许可协议
