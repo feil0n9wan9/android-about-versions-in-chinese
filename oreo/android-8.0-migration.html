@@ -1,0 +1,828 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>迁移到Android 8.0 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="android-8.0-samples.html" />
+    
+    
+    <link rel="prev" href="android-8.0-changes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Oreo奥利奥
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="android-8.0.html">
+            
+                <a href="android-8.0.html">
+            
+                    
+                    Android 8.0功能和APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="android-8.0-changes.html">
+            
+                <a href="android-8.0-changes.html">
+            
+                    
+                    Android 8.0行为变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="android-8.0-migration.html">
+            
+                <a href="android-8.0-migration.html">
+            
+                    
+                    迁移到Android 8.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="android-8.0-samples.html">
+            
+                <a href="android-8.0-samples.html">
+            
+                    
+                    Android 8.0示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="background.html">
+            
+                <a href="background.html">
+            
+                    
+                    后台执行限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="background-location-limits.html">
+            
+                <a href="background-location-limits.html">
+            
+                    
+                    后台位置限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../nougat.html">
+            
+                <a href="../nougat.html">
+            
+                    
+                    Nougat牛轧糖
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../android-7.1.html">
+            
+                <a href="../android-7.1.html">
+            
+                    
+                    Android 7.1于开发者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../android-7.1-samples.html">
+            
+                <a href="../android-7.1-samples.html">
+            
+                    
+                    Android 7.1示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../android-7.0.html">
+            
+                <a href="../android-7.0.html">
+            
+                    
+                    Android 7.0于开发者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../android-7.0-changes.html">
+            
+                <a href="../android-7.0-changes.html">
+            
+                    
+                    Android 7.0行为变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../android-7.0-samples.html">
+            
+                <a href="../android-7.0-samples.html">
+            
+                    
+                    Android 7.0示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../marshmallow.html">
+            
+                <a href="../marshmallow.html">
+            
+                    
+                    Marshmallow棉花糖
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../android-6.0.html">
+            
+                <a href="../android-6.0.html">
+            
+                    
+                    Android 6.0 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../android-6.0-changes.html">
+            
+                <a href="../android-6.0-changes.html">
+            
+                    
+                    Android 6.0变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../android-6.0-samples.html">
+            
+                <a href="../android-6.0-samples.html">
+            
+                    
+                    Android 6.0示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../android-6.0-testing.html">
+            
+                <a href="../android-6.0-testing.html">
+            
+                    
+                    Android 6.0测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../lollipop.html">
+            
+                <a href="../lollipop.html">
+            
+                    
+                    Lollipop棒棒糖
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../android-5.1.html">
+            
+                <a href="../android-5.1.html">
+            
+                    
+                    Android 5.1 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../android-5.0.html">
+            
+                <a href="../android-5.0.html">
+            
+                    
+                    Android 5.0 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../android-5.0-changes.html">
+            
+                <a href="../android-5.0-changes.html">
+            
+                    
+                    Android 5.0变更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../kitkat.html">
+            
+                <a href="../kitkat.html">
+            
+                    
+                    KitKat奇巧
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../android-4.4.html">
+            
+                <a href="../android-4.4.html">
+            
+                    
+                    Android 4.4 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../jelly-bean.html">
+            
+                <a href="../jelly-bean.html">
+            
+                    
+                    Jelly Bean果冻豆
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../android-4.3.html">
+            
+                <a href="../android-4.3.html">
+            
+                    
+                    Android 4.3 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../android-4.2.html">
+            
+                <a href="../android-4.2.html">
+            
+                    
+                    Android 4.2 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../android-4.1.html">
+            
+                <a href="../android-4.1.html">
+            
+                    
+                    Android 4.1 APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../android.html">
+            
+                <a href="../android.html">
+            
+                    
+                    关于Android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../dashboards.html">
+            
+                <a href="../dashboards.html">
+            
+                    
+                    数据仪表盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >迁移到Android 8.0</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8FC1;&#x79FB;&#x5E94;&#x7528;&#x5230;android-80">&#x8FC1;&#x79FB;&#x5E94;&#x7528;&#x5230;Android 8.0</h1>
+<p>Android 8.0&#x5F15;&#x5165;&#x4E86;&#x82E5;&#x5E72;&#x65B0;&#x7684;&#x529F;&#x80FD;&#x548C;API&#xFF0C;&#x5E76;&#x52A0;&#x5165;&#x4E86;&#x5373;&#x4FBF;&#x60A8;&#x672A;&#x5BF9;&#x5E94;&#x7528;&#x505A;&#x4EFB;&#x4F55;&#x66F4;&#x6539;&#x4ECD;&#x53EF;&#x80FD;&#x5BF9;&#x5176;&#x884C;&#x4E3A;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x7684;&#x4E00;&#x4E9B;&#x53D8;&#x52A8;&#x3002;&#x4E3A;&#x5E2E;&#x52A9;&#x60A8;&#x505A;&#x597D;&#x51C6;&#x5907;&#xFF0C;&#x672C;&#x9875;&#x9762;&#x5C06;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x6267;&#x884C;&#x517C;&#x5BB9;&#x6027;&#x6D4B;&#x8BD5;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x66F4;&#x65B0;&#x5E94;&#x7528;&#x4EE5;&#x4FBF;&#x5229;&#x7528;Android 8.0&#x7684;&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li><a href="android-8.0-migration.html#ct">&#x786E;&#x4FDD;&#x5E73;&#x53F0;&#x517C;&#x5BB9;&#x6027;</a></li>
+</ul>
+<p>&#x9A8C;&#x8BC1;&#x60A8;&#x7684;&#x5E94;&#x7528;&#x80FD;&#x591F;&#x5728;&#x65B0;&#x7248;&#x672C;&#x5E73;&#x53F0;&#x4E0A;&#x5168;&#x529F;&#x80FD;&#x8FD0;&#x884C;&#x3002;&#x5728;&#x6B64;&#x9636;&#x6BB5;&#xFF0C;&#x60A8;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x65B0;&#x7684;API&#xFF0C;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x66F4;&#x6539;&#x5E94;&#x7528;&#x7684;<code>targetSdkVersion</code>&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x7EC6;&#x5FAE;&#x7684;&#x66F4;&#x6539;&#x3002;</p>
+<ul>
+<li><a href="android-8.0-migration.html#bfa">&#x4F7F;&#x7528;Android 8.0SDK&#x6784;&#x5EFA;&#x5E94;&#x7528;</a></li>
+</ul>
+<p>&#x5F53;&#x60A8;&#x51C6;&#x5907;&#x597D;&#x5229;&#x7528;&#x5E73;&#x53F0;&#x7684;&#x65B0;&#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x5C06;<code>targetSdkVersion</code>&#x66F4;&#x65B0;&#x81F3;&#x201C;O&#x201D;&#xFF0C;&#x9A8C;&#x8BC1;&#x5E94;&#x7528;&#x662F;&#x5426;&#x4ECD;&#x53EF;&#x6309;&#x9884;&#x671F;&#x65B9;&#x5F0F;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x65B0;&#x7684;API&#x3002;
+<img src="../images/android-8.0-migration/o-phases.svg" alt=""></p>
+<h3 id="&#x786E;&#x4FDD;&#x5E73;&#x53F0;&#x517C;&#x5BB9;&#x6027;"><a id="ct"></a>&#x786E;&#x4FDD;&#x5E73;&#x53F0;&#x517C;&#x5BB9;&#x6027;</h3>
+<p>&#x8FD9;&#x4E00;&#x6B65;&#x7684;&#x76EE;&#x6807;&#x662F;&#x786E;&#x4FDD;&#x5E94;&#x7528;&#x5728;Android 8.0&#x4E0A;&#x53EF;&#x7167;&#x5E38;&#x8FD0;&#x884C;&#x3002;&#x7531;&#x4E8E;&#x4E00;&#x4E9B;&#x5E73;&#x53F0;&#x53D8;&#x5316;&#x53EF;&#x80FD;&#x5F71;&#x54CD;&#x5E94;&#x7528;&#x7684;&#x884C;&#x4E3A;&#x65B9;&#x5F0F;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x8C03;&#x6574;&#xFF0C;&#x4F46;&#x60A8;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x65B0;&#x7684;API&#x6216;&#x66F4;&#x6539;<code>targetSdkVersion</code>&#x3002;
+<img src="../images/android-8.0-migration/o-compat-flow-zhcn.svg" alt=""></p>
+<h3 id="&#x51C6;&#x5907;&#x4E00;&#x53F0;&#x8FD0;&#x884C;android-80&#x7684;&#x8BBE;&#x5907;">&#x51C6;&#x5907;&#x4E00;&#x53F0;&#x8FD0;&#x884C;Android 8.0&#x7684;&#x8BBE;&#x5907;</h3>
+<ul>
+<li>&#x5982;&#x679C;&#x60A8;&#x6709;&#x4E00;&#x53F0;&#x517C;&#x5BB9;&#x8BBE;&#x5907;&#xFF08;Pixel&#x3001;Pixel XL&#x3001;Pixel C&#x3001;Nexus 5X&#x3001;Nexus 6P&#x6216;Nexus Player&#xFF09;&#xFF0C;&#x8BF7;&#x4ECE;<a href="https://developer.android.google.cn/about/versions/oreo/download.html" target="_blank">&#x4E0B;&#x8F7D;</a>&#x9875;&#x9762;&#x83B7;&#x5F97;&#x9002;&#x5408;&#x60A8;&#x7684;&#x8BBE;&#x5907;&#x7684;Android 8.0&#x7CFB;&#x7EDF;&#x6620;&#x50CF;&#xFF0C;&#x7136;&#x540E;&#x6309;&#x7167;&#x8BF4;&#x660E;<a href="https://developers.google.cn/android/images#instructions" target="_blank">&#x5C06;&#x6620;&#x50CF;&#x5237;&#x5165;&#x8BBE;&#x5907;</a>&#x3002;</li>
+<li>&#x6216;&#x4E0B;&#x8F7D;&#x9002;&#x7528;&#x4E8E;Android Emulator&#x7684;Android 8.0&#x7CFB;&#x7EDF;&#x6620;&#x50CF;&#x3002;&#x5B83;&#x5217;&#x4E8E;<a href="https://developer.android.google.cn/studio/intro/update.html##sdk-manager" target="_blank">SDK &#x7BA1;&#x7406;&#x5668;</a>&#x7684;<strong>Android 8.0 Preview</strong>&#x4E0B;&#xFF0C;&#x663E;&#x793A;&#x4E3A;<strong>Google APIs Intel x86 Atom System Image</strong>&#x3002;<blockquote>
+<p>&#x6CE8;&#xFF1A;Android 8.0&#x7CFB;&#x7EDF;&#x6620;&#x50CF;&#x53EA;&#x80FD;&#x901A;&#x8FC7;<a href="https://developer.android.google.cn/studio/preview/index.html" target="_blank">Android Studio 3.0Canary</a>&#x4E0B;&#x8F7D;&#x3002;&#x5982;&#x9700;&#x4E86;&#x89E3;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x4E0B;&#x9762;&#x4E00;&#x8282;&#x4EE5;<a href="#ptb">&#x83B7;&#x53D6;Android 8.0 SDK</a>&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="&#x6267;&#x884C;&#x517C;&#x5BB9;&#x6027;&#x6D4B;&#x8BD5;">&#x6267;&#x884C;&#x517C;&#x5BB9;&#x6027;&#x6D4B;&#x8BD5;</h3>
+<p>&#x4E0E;Android 8.0&#x7684;&#x517C;&#x5BB9;&#x6027;&#x6D4B;&#x8BD5;&#x591A;&#x534A;&#x4E0E;&#x60A8;&#x51C6;&#x5907;&#x53D1;&#x5E03;&#x5E94;&#x7528;&#x65F6;&#x6267;&#x884C;&#x7684;&#x6D4B;&#x8BD5;&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x65F6;&#x6709;&#x5FC5;&#x8981;&#x56DE;&#x987E;&#x4E00;&#x4E0B;<a href="https://developer.android.google.cn/develop/quality-guidelines/core-app-quality.html" target="_blank">&#x6838;&#x5FC3;&#x5E94;&#x7528;&#x8D28;&#x91CF;&#x51C6;&#x5219;</a>&#x548C;<a href="https://developer.android.google.cn/training/testing/index.html" target="_blank">&#x6D4B;&#x8BD5;&#x6700;&#x4F73;&#x505A;&#x6CD5;</a>&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x6D4B;&#x8BD5;&#x8FD8;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x5C42;&#x9762;&#xFF1A;Android 8.0&#x5411;Android&#x5E73;&#x53F0;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E9B;&#x53D8;&#x5316;&#xFF0C;&#x5373;&#x4FBF;&#x4E0D;&#x5BF9;<code>targetSdkVersion</code>&#x505A;&#x4EFB;&#x4F55;&#x53D8;&#x52A8;&#xFF0C;&#x4ECD;&#x53EF;&#x80FD;&#x5F71;&#x54CD;&#x5E94;&#x7528;&#x7684;&#x884C;&#x4E3A;&#x6216;&#x4EE4;&#x5176;&#x6839;&#x672C;&#x65E0;&#x6CD5;&#x8FD0;&#x884C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x56DE;&#x987E;&#x8868; 1&#x4E2D;&#x7684;&#x5173;&#x952E;&#x53D8;&#x5316;&#xFF0C;&#x5E76;&#x5BF9;&#x4EFB;&#x4F55;&#x4E3A;&#x9002;&#x5E94;&#x8FD9;&#x4E9B;&#x53D8;&#x5316;&#x800C;&#x5B9E;&#x73B0;&#x7684;&#x4FEE;&#x590D;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p><strong>&#x8868; 1</strong>. &#x5BF9;&#x8FD0;&#x884C;&#x5728;Android 8.0&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5E94;&#x7528;&#x90FD;&#x6709;&#x5F71;&#x54CD;&#x7684;&#x5173;&#x952E;&#x53D8;&#x5316;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53D8;&#x5316;</th>
+<th style="text-align:left">&#x6458;&#x8981;</th>
+<th style="text-align:left">&#x5176;&#x4ED6;&#x53C2;&#x8003;&#x8D44;&#x6599;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x540E;&#x53F0;&#x4F4D;&#x7F6E;&#x66F4;&#x65B0;&#x9891;&#x7387;&#x4E0B;&#x964D;</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x5E94;&#x7528;&#x63A5;&#x6536;&#x6765;&#x81EA;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x7684;&#x4F4D;&#x7F6E;&#x66F4;&#x65B0;&#xFF0C;&#x5219;&#x5176;&#x5728;Android 8.0&#x4E0A;&#x63A5;&#x6536;&#x66F4;&#x65B0;&#x7684;&#x9891;&#x7387;&#x8981;&#x6BD4;&#x65E7;&#x7248;&#x672C;Android&#x4F4E;&#x3002;&#x5177;&#x4F53;&#x5730;&#x8BB2;&#xFF0C;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x63A5;&#x6536;&#x4F4D;&#x7F6E;&#x66F4;&#x65B0;&#x7684;&#x9891;&#x7387;&#x4E0D;&#x80FD;&#x8D85;&#x8FC7;&#x6BCF;&#x5C0F;&#x65F6;&#x51E0;&#x6B21;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5F53;&#x5E94;&#x7528;&#x4F4D;&#x4E8E;&#x524D;&#x53F0;&#x65F6;&#xFF0C;&#x4F4D;&#x7F6E;&#x66F4;&#x65B0;&#x9891;&#x7387;&#x4E0D;&#x53D8;&#x3002;</td>
+<td style="text-align:left"><a href="background-location-limits.html">&#x540E;&#x53F0;&#x4F4D;&#x7F6E;&#x9650;&#x5236;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4E0D;&#x518D;&#x652F;&#x6301;<code>net.hostname</code></td>
+<td style="text-align:left">&#x67E5;&#x8BE2;<code>net.hostname</code>&#x7CFB;&#x7EDF;&#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#x7A7A;&#x3002;</td>
+<td style="text-align:left">&#x65E0;</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket)" target="_blank">send(DatagramPacket)</a>&#x5F15;&#x53D1;&#x65B0;&#x5F02;&#x5E38;</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x7684;<a href="https://developer.android.google.cn/reference/java/net/DatagramSocket.html#connect(java.net.InetAddress, int)" target="_blank">connect(InetAddress, int)</a>&#x65B9;&#x6CD5;&#x5931;&#x8D25;&#xFF0C;<a href="https://developer.android.google.cn/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket)" target="_blank">send(DatagramPacket)</a>&#x65B9;&#x6CD5;&#x4F1A;&#x5F15;&#x53D1;<a href="https://developer.android.google.cn/reference/java/net/SocketException.html" target="_blank">SocketException</a>&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#networking-all">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x548C;HTTP(S)&#x8FDE;&#x63A5;</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://developer.android.google.cn/reference/java/util/AbstractCollection.html" target="_blank">AbstractCollection</a>&#x65B9;&#x6CD5;&#x5F15;&#x53D1;&#x6B63;&#x5E38;&#x7684;<a href="https://developer.android.google.cn/reference/java/lang/NullPointerException.html" target="_blank">NullPointerException</a></td>
+<td style="text-align:left">&#x73B0;&#x5728;&#xFF0C;<a href="https://developer.android.google.cn/reference/java/util/AbstractCollection.html#removeAll(java.util.Collection&lt;?&gt;)" target="_blank">AbstractCollection.removeAll(null)</a>&#x548C;<a href="https://developer.android.google.cn/reference/java/util/AbstractCollection.html#retainAll(java.util.Collection&lt;?&gt;)" target="_blank">AbstractCollection.retainAll(null)</a>&#x59CB;&#x7EC8;&#x5F15;&#x53D1;<a href="https://developer.android.google.cn/reference/java/lang/NullPointerException.html" target="_blank">NullPointerException</a>&#xFF1B;&#x4E4B;&#x524D;&#xFF0C;&#x5F53;&#x96C6;&#x5408;&#x4E3A;&#x7A7A;&#x65F6;&#x4E0D;&#x4F1A;&#x5F15;&#x53D1;<a href="https://developer.android.google.cn/reference/java/lang/NullPointerException.html" target="_blank">NullPointerException</a>&#x3002;&#x6B64;&#x9879;&#x53D8;&#x66F4;&#x4F7F;&#x884C;&#x4E3A;&#x7B26;&#x5408;&#x6587;&#x6863;&#x8981;&#x6C42;&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#ch-all">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x96C6;&#x5408;&#x7684;&#x5904;&#x7406;</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName()" target="_blank">Currency.getDisplayName(null)</a>&#x5F15;&#x53D1;&#x6B63;&#x5E38;&#x7684;<a href="https://developer.android.google.cn/reference/java/lang/NullPointerException.html" target="_blank">NullPointerException</a></td>
+<td style="text-align:left">&#x8C03;&#x7528;<a href="https://developer.android.google.cn/reference/android/icu/util/Currency.html#getDisplayName()" target="_blank">Currency.getDisplayName(null)</a>&#x4F1A;&#x5F15;&#x53D1;<a href="https://developer.android.google.cn/reference/java/lang/NullPointerException.html" target="_blank">NullPointerException</a>&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#lai">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x8BED;&#x8A00;&#x533A;&#x57DF;&#x548C;&#x56FD;&#x9645;&#x5316;</a></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5982;&#x9700;&#x67E5;&#x770B;&#x66F4;&#x8BE6;&#x5C3D;&#x7684;Android 8.0&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#x5217;&#x8868;&#xFF0C;&#x53E6;&#x8BF7;&#x53C2;&#x9605;<a href="android-8.0-changes.html">Android 8.0&#x884C;&#x4E3A;&#x53D8;&#x66F4;</a>&#x3002;</p>
+<h3 id="&#x6784;&#x5EFA;&#x5177;&#x6709;android-80&#x529F;&#x80FD;&#x7684;&#x5E94;&#x7528;"><a id="bfa"></a>&#x6784;&#x5EFA;&#x5177;&#x6709;Android 8.0&#x529F;&#x80FD;&#x7684;&#x5E94;&#x7528;</h3>
+<p>&#x5982;&#x8868; 2&#x6240;&#x8FF0;&#xFF0C;&#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x65B0;&#x7684;API&#x5916;&#xFF0C;Android 8.0&#x8FD8;&#x4F1A;&#x5728;&#x60A8;&#x66F4;&#x65B0;<code>targetSdkVersion</code>&#x65F6;&#x5F15;&#x53D1;&#x5176;&#x4ED6;&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#x3002;&#x672C;&#x8282;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x5C06;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EE5;&#x65B0;&#x5E73;&#x53F0;&#x4E3A;&#x76EE;&#x6807;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7740;&#x624B;&#x6784;&#x5EFA;&#x548C;&#x6D4B;&#x8BD5;Android 8.0 API&#x5E26;&#x6765;&#x7684;&#x53D8;&#x5316;&#x548C;&#x65B0;&#x529F;&#x80FD;&#x3002;</p>
+<blockquote>
+<p><strong>&#x6CE8;</strong>&#xFF1A;&#x4E0A;&#x8FF0;&#x65E8;&#x5728;<a href="android-8.0-migration.html#ec">&#x786E;&#x4FDD;&#x5E73;&#x53F0;&#x517C;&#x5BB9;&#x6027;</a>&#x7684;&#x6B65;&#x9AA4;&#x662F;&#x9762;&#x5411;Android 8.0&#x6784;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x5148;&#x51B3;&#x6761;&#x4EF6;&#xFF0C;&#x56E0;&#x6B64;&#x8BF7;&#x60A8;&#x52A1;&#x5FC5;&#x5148;&#x5B8C;&#x6210;&#x8FD9;&#x4E9B;&#x6B65;&#x9AA4;&#x3002;</p>
+</blockquote>
+<p><img src="../images/android-8.0-migration/o-building-flow-zhcn.svg" alt=""></p>
+<h3 id="&#x83B7;&#x53D6;android-80-sdk"><a id="ptb"></a>&#x83B7;&#x53D6;Android 8.0 SDK</h3>
+<ul>
+<li><p><a href="https://developer.android.google.cn/studio/preview/index.html" target="_blank">&#x5B89;&#x88C5;Android Studio 3.0 Canary</a>&#x3002;</p>
+<p>&#x53EA;&#x6709;Android Studio 3.0&#x5305;&#x542B;&#x5BF9;Android 8.0&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x65B0;&#x5F00;&#x53D1;&#x8005;&#x529F;&#x80FD;&#x7684;&#x652F;&#x6301;&#x3002;&#x56E0;&#x6B64;&#x60A8;&#x9700;&#x8981;&#x83B7;&#x5F97;Android Studio 3.0 Canary&#x7248;&#x672C;&#xFF0C;&#x4EE5;&#x4FBF;&#x5F00;&#x59CB;&#x4F7F;&#x7528;Android 8.0 SDK&#x3002;&#x4F46;&#x60A8;&#x4ECD;&#x53EF;&#x4FDD;&#x7559;&#x5DF2;&#x5B89;&#x88C5;&#x7684;Android Studio&#x7A33;&#x5B9A;&#x7248;&#x3002;</p>
+</li>
+<li><p>&#x542F;&#x52A8;Android Studio 3.0&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;<strong>Tools &gt; Android &gt; SDK Manager</strong>&#x6253;&#x5F00;SDK&#x7BA1;&#x7406;&#x5668;&#x3002;</p>
+</li>
+<li>&#x5728;<strong>SDK Platforms</strong>&#x6807;&#x7B7E;&#x4E2D;&#xFF0C;&#x9009;&#x4E2D;<strong>Show Package Details</strong>&#x3002;&#x5728;<strong>Android 8.0 Preview</strong>&#x4E0B;&#x9009;&#x4E2D;&#x4E0B;&#x5217;&#x9879;&#xFF1A;<ul>
+<li><strong>Android SDK Platform O</strong></li>
+<li><strong>Google APIs Intel x86 Atom System Image</strong>&#xFF08;&#x53EA;&#x9700;&#x5728;&#x4F7F;&#x7528;&#x6A21;&#x62DF;&#x5668;&#x65F6;&#x9009;&#x4E2D;&#xFF09;</li>
+</ul>
+</li>
+<li>&#x5207;&#x6362;&#x5230;<strong>SDK Tools</strong>&#x6807;&#x7B7E;&#xFF0C;&#x9009;&#x4E2D;&#x6240;&#x6709;&#x5DF2;&#x63D0;&#x4F9B;&#x66F4;&#x65B0;&#x7684;&#x9879;&#xFF08;&#x70B9;&#x51FB;&#x6BCF;&#x4E2A;&#x663E;&#x793A;&#x7834;&#x6298;&#x53F7;<img src="../images/android-8.0-migration/sdk-manager-icon-update_2-0_2x.png" alt="">&#x7684;&#x590D;&#x9009;&#x6846;&#xFF09;&#x3002;&#x8FD9;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x4E0B;&#x5217;&#x5FC5;&#x9700;&#x9879;&#xFF1A;<ul>
+<li><strong>Android SDK Build-Tools 26.0.0</strong>&#xFF08;rc2 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF09;</li>
+<li><strong>Android SDK Platform-Tools 26.0.0</strong>&#xFF08;rc2 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF09;</li>
+<li><strong>Android Emulator 26.0.0</strong></li>
+<li><strong>Support Repository</strong></li>
+</ul>
+</li>
+<li>&#x70B9;&#x51FB;OK&#x5B89;&#x88C5;&#x6240;&#x6709;&#x9009;&#x5B9A;&#x7684;SDK&#x8F6F;&#x4EF6;&#x5305;&#x3002;</li>
+</ul>
+<p>&#x73B0;&#x5728;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x4F7F;&#x7528;Android 8.0&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x4E86;&#x3002;</p>
+<h3 id="&#x66F4;&#x65B0;&#x6784;&#x5EFA;&#x914D;&#x7F6E;">&#x66F4;&#x65B0;&#x6784;&#x5EFA;&#x914D;&#x7F6E;</h3>
+<p>&#x5C06;<code>compileSdkVersion</code>&#x3001;<code>buildToolsVersion</code>&#x3001;<code>targetSdkVersion</code>&#x548C;Support Library&#x7248;&#x672C;&#x66F4;&#x65B0;&#x4E3A;&#x4E0B;&#x5217;&#x7248;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-gradle">android {
+  compileSdkVersion <span class="hljs-number">26</span>
+  buildToolsVersion <span class="hljs-string">&apos;26.0.0&apos;</span>
+
+  defaultConfig {
+    targetSdkVersion <span class="hljs-number">26</span>
+  }
+  ...
+}
+
+<span class="hljs-keyword">dependencies</span> {
+  <span class="hljs-keyword">compile</span> <span class="hljs-string">&apos;com.android.support:appcompat-v7:26.0.0&apos;</span>
+}
+
+<span class="hljs-comment">// REQUIRED: Google&apos;s new Maven repo is required for the latest</span>
+<span class="hljs-comment">// support library that is compatible with Android 8.0</span>
+<span class="hljs-keyword">repositories</span> {
+    maven {
+        url <span class="hljs-string">&apos;https://maven.google.com&apos;</span>
+        <span class="hljs-comment">// Alternative URL is &apos;https://dl.google.com/dl/android/maven2/&apos;</span>
+    }
+}
+</code></pre>
+<blockquote>
+<p><strong>&#x60A8;&#x4E0D;&#x80FD;&#x5728;&#x6B64;&#x914D;&#x7F6E;&#x4E0B;&#x53D1;&#x5E03;&#x5E94;&#x7528;</strong>&#x3002;&#x201C;O&#x201D;&#x7248;&#x672C;&#x662F;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;API&#x7EA7;&#x522B;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x4E8E;Android 8.0&#x5F00;&#x53D1;&#x8005;&#x9884;&#x89C8;&#x671F;&#x95F4;&#x7684;&#x5F00;&#x53D1;&#x548C;&#x6D4B;&#x8BD5;&#x3002;&#x60A8;&#x5FC5;&#x987B;&#x7B49;&#x5230;&#x6700;&#x7EC8; API &#x7EA7;&#x522B;&#x53D1;&#x5E03;&#x65F6;&#x518D;&#x53D1;&#x5E03; Android 8.0 &#x53D8;&#x66F4;&#xFF0C;&#x5C4A;&#x65F6;&#x518D;&#x6B21;&#x66F4;&#x65B0;&#x914D;&#x7F6E;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4ECE;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x79FB;&#x9664;&#x5E7F;&#x64AD;&#x63A5;&#x6536;&#x5668;">&#x4ECE;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x4E2D;&#x79FB;&#x9664;&#x5E7F;&#x64AD;&#x63A5;&#x6536;&#x5668;</h3>
+<p>&#x7531;&#x4E8E;Android 8.0&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;<a href="background.html#broadcasts">&#x5E7F;&#x64AD;&#x63A5;&#x6536;&#x5668;&#x9650;&#x5236;</a>&#xFF0C;&#x56E0;&#x6B64;&#x60A8;&#x5E94;&#x8BE5;&#x79FB;&#x9664;&#x6240;&#x6709;&#x4E3A;&#x9690;&#x5F0F;&#x5E7F;&#x64AD;Intent&#x6CE8;&#x518C;&#x7684;&#x5E7F;&#x64AD;&#x63A5;&#x6536;&#x5668;&#x3002;&#x5C06;&#x5B83;&#x4EEC;&#x7559;&#x5728;&#x539F;&#x4F4D;&#x5E76;&#x4E0D;&#x4F1A;&#x5728;&#x6784;&#x5EFA;&#x65F6;&#x6216;&#x8FD0;&#x884C;&#x65F6;&#x4EE4;&#x5E94;&#x7528;&#x5931;&#x6548;&#xFF0C;&#x4F46;&#x5F53;&#x5E94;&#x7528;&#x8FD0;&#x884C;&#x5728;Android 8.0&#x4E0A;&#x65F6;&#x5B83;&#x4EEC;&#x4E0D;&#x8D77;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;&#x3002;</p>
+<p>&#x663E;&#x5F0F;&#x5E7F;&#x64AD;Intent&#xFF08;&#x53EA;&#x6709;&#x60A8;&#x7684;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x54CD;&#x5E94;&#x7684;Intent&#xFF09;&#x5728;Android 8.0&#x4E0A;&#x4ECD;&#x4EE5;&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B0;&#x589E;&#x9650;&#x5236;&#x6709;&#x4E00;&#x4E9B;&#x4F8B;&#x5916;&#x60C5;&#x51B5;&#x3002;&#x5982;&#x9700;&#x67E5;&#x770B;&#x5728;&#x4EE5;Android 8.0&#x4E3A;&#x76EE;&#x6807;&#x5E73;&#x53F0;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x4ECD;&#x7136;&#x6709;&#x6548;&#x7684;&#x9690;&#x5F0F;&#x5E7F;&#x64AD;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://developer.android.google.cn/guide/components/broadcast-exceptions.html" target="_blank">&#x9690;&#x5F0F;&#x5E7F;&#x64AD;&#x4F8B;&#x5916;</a>&#x3002;</p>
+<h3 id="&#x6D4B;&#x8BD5;android-80&#x5E94;&#x7528;">&#x6D4B;&#x8BD5;Android 8.0&#x5E94;&#x7528;</h3>
+<p>&#x5B8C;&#x6210;&#x4EE5;&#x4E0A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x540E;&#xFF0C;&#x60A8;&#x5C31;&#x53EF;&#x4EE5;&#x6784;&#x5EFA;&#x5E94;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x5176;&#x505A;&#x8FDB;&#x4E00;&#x6B65;&#x6D4B;&#x8BD5;&#xFF0C;&#x4EE5;&#x786E;&#x4FDD;Android 8.0&#x4E3A;&#x76EE;&#x6807;&#x5E73;&#x53F0;&#x65F6;&#x5B83;&#x80FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#x8FD9;&#x65F6;&#x6709;&#x5FC5;&#x8981;&#x56DE;&#x987E;&#x4E00;&#x4E0B;<a href="https://developer.android.google.cn/develop/quality-guidelines/core-app-quality.html" target="_blank">&#x6838;&#x5FC3;&#x5E94;&#x7528;&#x8D28;&#x91CF;&#x51C6;&#x5219;</a>&#x548C;<a href="https://developer.android.google.cn/training/testing/index.html" target="_blank">&#x6D4B;&#x8BD5;&#x6700;&#x4F73;&#x505A;&#x6CD5;</a>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60A8;&#x6784;&#x5EFA;&#x5E94;&#x7528;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;&#x9002;&#x7528;&#x4E8E;Android 8.0&#x7684;<code>targetSdkVersion</code>&#xFF0C;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x7279;&#x5B9A;&#x7684;&#x5E73;&#x53F0;&#x53D8;&#x5316;&#x3002;&#x5373;&#x4FBF;&#x60A8;&#x4E0D;&#x5B9E;&#x73B0;Android 8.0&#x4E2D;&#x7684;&#x65B0;&#x529F;&#x80FD;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x53D8;&#x5316;&#x4ECD;&#x53EF;&#x80FD;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#x5E94;&#x7528;&#x7684;&#x884C;&#x4E3A;&#x6216;&#x4EE4;&#x5176;&#x6839;&#x672C;&#x65E0;&#x6CD5;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x8868; 2&#x5217;&#x51FA;&#x4E86;&#x8FD9;&#x4E9B;&#x53D8;&#x5316;&#x4EE5;&#x53CA;&#x53EF;&#x83B7;&#x5F97;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
+<p><strong>&#x8868; 2</strong>. <code>targetSdkVersion</code>&#x8BBE;&#x7F6E;&#x4E3A;&#x201C;O&#x201D;&#x65F6;&#x5F71;&#x54CD;&#x5E94;&#x7528;&#x7684;&#x5173;&#x952E;&#x53D8;&#x5316;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53D8;&#x5316;</th>
+<th style="text-align:left">&#x6458;&#x8981;</th>
+<th style="text-align:left">&#x5176;&#x4ED6;&#x53C2;&#x8003;&#x8D44;&#x6599;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x9690;&#x79C1;&#x6027;</td>
+<td style="text-align:left">Android 8.0&#x4E0D;&#x652F;&#x6301;&#x4F7F;&#x7528;net.dns1&#x3001;net.dns2&#x3001;net.dns3&#x6216;net.dns4&#x7CFB;&#x7EDF;&#x5C5E;&#x6027;&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#pr">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x9690;&#x79C1;&#x6027;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5B9E;&#x884C;&#x4E86;&#x53EF;&#x5199;&#x4E14;&#x53EF;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x6BB5;</td>
+<td style="text-align:left">&#x5BF9;&#x4E8E;&#x539F;&#x751F;&#x5E93;&#xFF0C;Android 8.0&#x5B9E;&#x884C;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF1A;&#x6570;&#x636E;&#x4E0D;&#x5E94;&#x53EF;&#x6267;&#x884C;&#xFF0C;&#x4EE3;&#x7801;&#x4E0D;&#x5E94;&#x53EF;&#x5199;&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#nl">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x539F;&#x751F;&#x5E93;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">ELF&#x6807;&#x5934;&#x548C;&#x8282;&#x9A8C;&#x8BC1;</td>
+<td style="text-align:left">&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5668;&#x5BF9;ELF&#x6807;&#x5934;&#x548C;&#x8282;&#x5934;&#x4E2D;&#x7684;&#x66F4;&#x591A;&#x503C;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#xFF0C;&#x5982;&#x679C;&#x503C;&#x65E0;&#x6548;&#x5219;&#x5931;&#x8D25;&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#nl">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x539F;&#x751F;&#x5E93;</a></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x901A;&#x77E5;</td>
+<td style="text-align:left">&#x4EE5;SDK&#x7684;Android 8.0&#x7248;&#x672C;&#x4E3A;&#x76EE;&#x6807;&#x5E73;&#x53F0;&#x7684;&#x5E94;&#x7528;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x901A;&#x77E5;&#x6E20;&#x9053;&#xFF0C;&#x4EE5;&#x4FBF;&#x5411;&#x7528;&#x6237;&#x53D1;&#x5E03;&#x901A;&#x77E5;</td>
+<td style="text-align:left"><a href="android-8.0.html#notifications"></a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://developer.android.google.cn/reference/java/util/List.html#sort(java.util.Comparator&lt;? super E&gt;)" target="_blank">List.sort()</a>&#x65B9;&#x6CD5;</td>
+<td style="text-align:left">&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x4E0D;&#x5F97;&#x518D;&#x8C03;&#x7528;<a href="https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List&lt;T&gt;)" target="_blank">Collections.sort()</a>&#xFF0C;&#x5426;&#x5219;&#x5E94;&#x7528;&#x5C06;&#x56E0;&#x5806;&#x6808;&#x6EA2;&#x51FA;&#x800C;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#o-ch">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x96C6;&#x5408;&#x7684;&#x5904;&#x7406;</a></td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List&lt;T&gt;)" target="_blank">Collections.sort()</a>&#x65B9;&#x6CD5;</td>
+<td style="text-align:left">&#x5728;&#x5217;&#x8868;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;<a href="https://developer.android.google.cn/reference/java/util/Collections.html#sort(java.util.List&lt;T&gt;)" target="_blank">Collections.sort()</a>&#x73B0;&#x5728;&#x4F1A;&#x5F15;&#x53D1;<a href="https://developer.android.google.cn/reference/java/util/ConcurrentModificationException.html" target="_blank">ConcurrentModificationException</a>&#x3002;</td>
+<td style="text-align:left"><a href="android-8.0-changes.html#o-ch">&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#xFF1A;&#x96C6;&#x5408;&#x7684;&#x5904;&#x7406;</a></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5982;&#x9700;&#x67E5;&#x770B;&#x66F4;&#x8BE6;&#x5C3D;&#x7684;Android 8.0&#x884C;&#x4E3A;&#x53D8;&#x66F4;&#x5217;&#x8868;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="android-8.0-changes.html">Android 8.0&#x884C;&#x4E3A;&#x53D8;&#x66F4;</a>&#x3002;</p>
+<p>&#x8981;&#x60F3;&#x63A2;&#x7A76;Android 8.0&#x63D0;&#x4F9B;&#x7684;&#x65B0;&#x529F;&#x80FD;&#x548C;&#x65B0;API&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="android-8.0.html">Android 8.0&#x529F;&#x80FD;&#x548C;APIs</a>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="android-8.0-changes.html" class="navigation navigation-prev " aria-label="Previous page: Android 8.0行为变更">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="android-8.0-samples.html" class="navigation navigation-next " aria-label="Next page: Android 8.0示例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"迁移到Android 8.0","level":"1.2.3","depth":2,"next":{"title":"Android 8.0示例","level":"1.2.4","depth":2,"path":"oreo/android-8.0-samples.md","ref":"oreo/android-8.0-samples.md","articles":[]},"previous":{"title":"Android 8.0行为变更","level":"1.2.2","depth":2,"path":"oreo/android-8.0-changes.md","ref":"oreo/android-8.0-changes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"oreo/android-8.0-migration.md","mtime":"2017-08-30T09:23:37.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-30T09:24:36.928Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
