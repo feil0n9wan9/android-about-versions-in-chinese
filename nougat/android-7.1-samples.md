@@ -2,7 +2,7 @@
 以下代码示例适用于Android 7.1（API 25）。要在Android Studio中下载示例，请选择**File > Import Samples**菜单选项。
 
 ### 应用程序快捷方式示例
-此示例演示如何使用Android 7.1（API级别25）中引入的[应用程序快捷方式API](https://developer.android.com/preview/app-shortcuts.html)。该API允许应用程序定义一组intent，并当用户长按应用程序的启动器图标时显示。示例给出了在XML中静态地注册链接以及在运行时动态地注册链接的方式。
+此示例演示如何使用Android 7.1（API级别25）中引入的[应用程序快捷方式API](android-7.1.html#shortcuts)。该API允许应用程序定义一组intent，并当用户长按应用程序的启动器图标时显示。示例给出了在XML中静态地注册链接以及在运行时动态地注册链接的方式。
 
 [App shortcuts sample](https://developer.android.com/samples/AppShortcuts/index.html)
 

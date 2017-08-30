@@ -16,7 +16,7 @@ Android 8.0引入了若干新的功能和API，并加入了即便您未对应用
 ### 准备一台运行Android 8.0的设备
 * 如果您有一台兼容设备（Pixel、Pixel XL、Pixel C、Nexus 5X、Nexus 6P或Nexus Player），请从[下载](https://developer.android.google.cn/about/versions/oreo/download.html)页面获得适合您的设备的Android 8.0系统映像，然后按照说明[将映像刷入设备](https://developers.google.cn/android/images#instructions)。
 * 或下载适用于Android Emulator的Android 8.0系统映像。它列于[SDK 管理器](https://developer.android.google.cn/studio/intro/update.html##sdk-manager)的**Android 8.0 Preview**下，显示为**Google APIs Intel x86 Atom System Image**。
-> 注：Android 8.0系统映像只能通过[Android Studio 3.0Canary](https://developer.android.google.cn/studio/preview/index.html)下载。如需了解详细信息，请参阅下面一节以[获取Android 8.0 SDK](#ptb)。
+> 注：Android 8.0系统映像只能通过[Android Studio 3.0 Canary](https://developer.android.google.cn/studio/preview/index.html)下载。如需了解详细信息，请参阅下面一节以[获取Android 8.0 SDK](#ptb)。
 
 ### 执行兼容性测试
 与Android 8.0的兼容性测试多半与您准备发布应用时执行的测试属于同一类型。这时有必要回顾一下[核心应用质量准则](https://developer.android.google.cn/develop/quality-guidelines/core-app-quality.html)和[测试最佳做法](https://developer.android.google.cn/training/testing/index.html)。

@@ -10,13 +10,13 @@ Android 7.0中，我们向平台引入了一种全新且非常需要的多任务
 
 用户现在可以在屏幕上一次弹出打开两个应用程序。
 - 在运行Android 7.0的手机和平板上，用户可以在分屏模式下以并列或者叠加的方式同时运行2个应用程序。用户可以通过拖拽应用程序之间的分隔线来调整应用程序的窗口大小。
-- 在Android TV设备上，应用程式可以开启[画中画模式](https://developer.android.com/preview/features/picture-in-picture.html)，以便用户在浏览或与其他应用程序互动时，可以继续显示内容。
+- 在Android TV设备上，应用程式可以开启[画中画模式](https://developer.android.google.cn/training/tv/playback/picture-in-picture.html)，以便用户在浏览或与其他应用程序互动时，可以继续显示内容。
 
 特别是在平板或者其他大屏设备上，多窗口支持为您提供了吸引用户的新方法。您甚至可以在您的应用程序中开启`拖放`功能以便用户可以很方便地拖拽内容到您的应用程序中或者从您的应用程序中拖拽内容 -- 一种绝佳的提升用户体验的方式。
 
 在您的应用程序中添加多窗口支持以及配置它如何处理多窗口显示是很简单的。例如，您可以指定您的Activity的最小允许尺寸，防止用户将Activity大小调整为小于该尺寸。您也可以在您的应用程序中禁止多窗口显示，以确保系统只会以全屏模式展示您的应用程序。
 
-更多信息请参阅[多窗口支持开发者文档](https://developer.android.com/preview/features/multi-window.html)。
+更多信息请参阅[多窗口支持开发者文档](https://developer.android.google.cn/guide/topics/ui/multi-window.html)。
 
 ### 通知增强
 Android 7.0中，我们重新设计了通知功能，以使它更容易、方便使用。一些变更如下：
@@ -26,7 +26,7 @@ Android 7.0中，我们重新设计了通知功能，以使它更容易、方便
 - **直接回复**：对于即时通讯应用程序，Android系统支持内联回复，以便用户可以在通知界面直接快速回复短信或者文字消息。
 - **自定义视图**：当在通知中使用自定义视图时，2个新的APIs使您能够自定义系统装饰，如通知标题和操作。
 
-要了解如何实现这些新特性，请参阅[通知](https://developer.android.com/preview/features/notification-updates.html)指南。
+要了解如何实现这些新特性，请参阅[通知](https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html)指南。
 
 ### 分析指导的JIT/AOT编译器
 Android 7.0中，我们添加了一个包含针对ART代码分析的即时（JIT）编译器，它会随着Android应用程序的运行，不断提升应用程序的性能。JIT编译器是对ART当前AOT编译器的补充，有助于提高运行时性能，节省存储空间，加快应用程序和系统的更新速度。
@@ -227,7 +227,7 @@ Android 7.0现在直接在开机向导程序的欢迎屏幕上提供视觉设置
 
 在引导时，系统以受限模式启动，只能访问设备加密的数据，并且无法访问应用或数据。如果您有要在此模式下运行的组件，可以通过在manifest中设置标志来注册它们。重新启动后，系统通过广播`LOCKED_BOOT_COMPLETED` intent来激活已注册的组件。系统会确保注册的设备加密的应用程序数据在解锁前可用。其他所有数据直到用户确认使用锁屏凭据解密后方可使用。
 
-有关详细信息，请参阅[直接引导](https://developer.android.com/preview/features/direct-boot.html)。
+有关详细信息，请参阅[直接引导](https://developer.android.google.cn/training/articles/direct-boot.html)。
 
 ### 密钥认证
 Android 7.0引入了密钥认证，一种新的安全工具，可帮助您确保存储在[设备的硬件支持的密钥库](https://source.android.com/security/keystore/)中的密钥对正确保护您的应用程序使用的敏感信息。通过使用此工具，您将对您的应用与驻留在安全硬件中的密钥进行互动更加放心，即使运行您应用的设备已经被root。如果您在应用中使用硬件支持的密钥库中的密钥，则应该使用此工具，尤其是在使用密钥验证应用中的敏感信息时。

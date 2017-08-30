@@ -117,7 +117,7 @@ Android 8.0让您可以更轻松地指定[View](https://developer.android.google
 
 从Android 8.0开始，您的应用中的[View](https://developer.android.google.cn/reference/android/view/View.html)可以请求指针捕获并定义一个侦听器来处理捕获的指针事件。鼠标指针在此模式下将隐藏。如果不再需要鼠标信息，该视图可以释放指针捕获。系统也可以在视图丢失焦点时（例如，当用户打开另一个应用时）释放指针捕获。
 
-如需了解有关如何在您的应用中使用此功能的信息，请参阅[指针捕获](https://developer.android.google.cn/preview/features/pointer-capture.html)。
+如需了解有关如何在您的应用中使用此功能的信息，请参阅[指针捕获](https://developer.android.google.cn/training/gestures/movement.html#pointer-capture)。
 
 #### 应用类别
 在适当的情况下，Android 8.0允许每个应用声明其所属的类别。这些类别用于将应用呈现给用户的用途或功能类似的应用归类在一起，例如按流量消耗、电池消耗和存储消耗将应用归类。您可以在`<application>`清单标记中设置`android:appCategory`属性，定义应用的类别。
@@ -209,7 +209,7 @@ Android 8.0 允许您为首选项提供自定义数据存储，如果您的应�
 
 ### 媒体增强功能
 #### VolumeShaper
-有一个新的[VolumeShaper](https://developer.android.google.cn/preview/features/volumeshaper.html)类。您可以用它来执行简短的自动音量转换，例如淡入、淡出和交叉淡入淡出。
+有一个新的[VolumeShaper](https://developer.android.google.cn/guide/topics/media/volumeshaper.html)类。您可以用它来执行简短的自动音量转换，例如淡入、淡出和交叉淡入淡出。
 
 #### 音频焦点增强功能
 音频应用通过请求和舍弃音频焦点的方式在设备上共享音频输出。应用通过启动或停止播放或者闪避音量的方式处理处于聚焦状态的变更。有一个新的`AudioFocusRequest`类。对于此类，应用在处理音频焦点变化时会使用[新功能](https://developer.android.google.cn/guide/topics/media-apps/audio-focus.html)：[自动闪避](https://developer.android.google.cn/guide/topics/media-apps/audio-focus.html#automatic_ducking)和[延迟聚焦](https://developer.android.google.cn/guide/topics/media-apps/audio-focus.html#delayed_focus_gain)。
@@ -225,8 +225,8 @@ Android 8.0 允许您为首选项提供自定义数据存储，如果您的应�
 
 #### MediaPlayer
 Android 8.0为MediaPlayer类添加了多种新方法。这些方法可以从多个方面增强您的应用处理媒体播放的能力：
-* 在[搜索](https://developer.android.google.cn/preview/features/media-player.html#seeking)帧时进行精细控制。
-* 播放[受数字版权管理保护的](https://developer.android.google.cn/preview/features/media-player.html#drm"")材料的功能。
+* 在[搜索](https://developer.android.google.cn/guide/topics/media/mediaplayer.html#seeking)帧时进行精细控制。
+* 播放[受数字版权管理保护的](https://developer.android.google.cn/guide/topics/media/mediaplayer.html#drm)材料的功能。
 
 #### 音频录制器
 * 音频录制器现在支持对流式传输有用的MPEG2_TS格式：
@@ -452,4 +452,4 @@ Android 8.0扩展了[ICU4J Android框架API](https://developer.android.google.cn
 * 配置流程中的用户体验改进措施（包含新的自定义选项）缩短了设置时间。
 * 蓝牙、WLAN、备份和安全性方面的新增控制选项使企业可以更精细地管理设备。网络操作组件日志记录可帮助企业追查问题。
 
-如需了解有关Android 8.0中面向Android企业版的新API和新功能的更多信息，请参阅[企业中的Android](https://developer.android.google.cn/preview/features/work.html)页面。
+如需了解有关Android 8.0中面向Android企业版的新API和新功能的更多信息，请参阅[企业中的Android](https://developer.android.google.cn/work/versions/Android-8.0.html)页面。

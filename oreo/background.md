@@ -18,7 +18,7 @@
 
 在大多数情况下，应用都可以使用[JobScheduler](https://developer.android.google.cn/reference/android/app/job/JobScheduler.html)作业克服这些限制。 这种方式让应用安排为在未活跃运行时执行工作，不过仍能够使系统可以在不影响用户体验的情况下安排这些作业。
 
-Android 8.0提供针对[JobScheduler](https://developer.android.google.cn/reference/android/app/job/JobScheduler.html)的多个改进，让您可以更轻松地使用计划作业取代服务和广播接收器；如需了解详细信息，请参阅[JobScheduler改进](https://developer.android.google.cn/preview/api-overview.html#jobscheduler)。
+Android 8.0提供针对[JobScheduler](https://developer.android.google.cn/reference/android/app/job/JobScheduler.html)的多个改进，让您可以更轻松地使用计划作业取代服务和广播接收器；如需了解详细信息，请参阅[JobScheduler改进](android-8.0.html#jobscheduler)。
 
 ### <a id="services"></a>后台服务限制
 在后台中运行的服务会消耗设备资源，这可能降低用户体验。 为了缓解这一问题，系统对这些服务施加了一些限制。
@@ -78,7 +78,7 @@ Android 8.0让这些限制更为严格。
 
 应用将清理作业安排在设备处于空闲状态和充电时运行。
 
-**注：**很多隐式广播当前均已不受此限制所限。 应用可以继续在其清单中为这些广播注册接收器，不管应用针对哪个 API 级别。 有关已豁免广播的列表，请参阅[隐式广播](https://developer.android.google.cn/preview/features/background-broadcasts.html)例外。
+**注：**很多隐式广播当前均已不受此限制所限。 应用可以继续在其清单中为这些广播注册接收器，不管应用针对哪个API级别。 有关已豁免广播的列表，请参阅[隐式广播](https://developer.android.google.cn/guide/components/broadcast-exceptions.html)例外。
 
 {: .note}
 
